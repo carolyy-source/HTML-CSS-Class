@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>table練習</title>
+    <style>
+      table,
+      th,
+      td {
+        /* 框線顏色 */
+        border: 1px solid black;
+        /* 邊界重疊線合併 */
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <!-- 表格標題 -->
+      <caption>
+        年齡統計表
+      </caption>
+      <!-- 條列組調整 -->
+      <colgroup>
+        <!-- 用col調整每欄/span跨越 -->
+        <col span="2" style="background-color: rgb(173, 169, 166)" />
+        <col style="background-color: rgb(255, 95, 124)" />
+      </colgroup>
+      <thead>
+        <tr>
+          <th>性別</th>
+          <th>姓名</th>
+          <th>電話</th>
+          <th>信箱</th>
+          <th>興趣</th>
+          <th>年齡</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <!-- 跨欄合併 -->
+          <th rowspan="2">女</th>
+          <td>Carol</td>
+          <td>0987654321</td>
+          <td>aaa</td>
+          <td>bbb</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th rowspan="2">男</th>
+          <td>Carols</td>
+          <td>0987654321</td>
+          <td>ccc</td>
+          <td>ddd</td>
+          <td>30</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <!-- 跨欄合併 -->
+          <th colspan="5">年齡平均值</th>
+
+          <td>25</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

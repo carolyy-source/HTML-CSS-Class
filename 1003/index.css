@@ -1,0 +1,17 @@
+h1 {
+  color: blue;
+  font-size: 60px;
+}
+/* 選取class=double的格式 */
+.double {
+  color: orange;
+}
+
+.font {
+  font-size: 30px;
+}
+
+/* 選取id=li2的格式 */
+#li2 {
+  background-color: pink;
+}

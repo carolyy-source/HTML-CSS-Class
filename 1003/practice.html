@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>表格作業練習</title>
+    <style>
+      table,
+      th,
+      td {
+        /* 框線顏色 */
+        border: 1px solid rgb(0, 0, 0);
+        /* 邊界重疊線合併 */
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <caption>
+        會計日報表
+      </caption>
+      <style>
+        th {
+          background-color: rgb(186, 233, 255);
+        }
+      </style>
+      <colgroup>
+        <!-- 用col調整每欄/span跨越 -->
+        <col span="4" />
+        <col style="background-color: pink" />
+      </colgroup>
+      <thead>
+        <tr>
+          <th rowspan="2" colspan="3">項目</th>
+          <th rowspan="2">折舊或推銷年</th>
+          <th rowspan="2">預計淨值</th>
+          <th rowspan="2">折舊或推銷方</th>
+          <th colspan="5">年度</th>
+        </tr>
+        <tr>
+          <!-- 快捷鍵:選取多個 ctrl+alt+up/down
+                mac:cmd+option+up/down -->
+          <th>年</th>
+          <th>年</th>
+          <th>年</th>
+          <th>年</th>
+          <th>年</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <!-- 第一行 -->
+        <tr>
+          <th rowspan="3">成本</th>
+          <th rowspan="2">會計</th>
+          <th>原值</th>
+          <td>---</td>
+          <td>---</td>
+          <td>---</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <!-- 第二行 -->
+        <tr>
+          <th>帳面淨額</th>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <th colspan="2">計稅</th>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <th rowspan="2">折舊或攤銷</th>
+          <th colspan="2">會計</th>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <th colspan="2">稅法</th>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <th colspan="6">本期納稅調整</th>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
