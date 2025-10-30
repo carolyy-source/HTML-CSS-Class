@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1029上課內容</title>
+    <link rel="stylesheet" href="../reset.css" />
+    <link rel="stylesheet" href="selector.css" />
+  </head>
+  <body>
+    <section>
+      <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/border" class="link">link1 MDN</a>
+      <a href="#" class="link">link2</a>
+      <a href="#" class="link">link3</a>
+      <a href="#" class="link">link4</a>
+    </section>
+    <section>
+      <ul class="nth-list">
+        <li class="nth-item">list1</li>
+        <li class="nth-item pp">list2排除</li>
+        <li class="nth-item">list3</li>
+        <li class="nth-item">list4</li>
+        <li class="nth-item pp">list5排除</li>
+        <li class="nth-item">list6</li>
+        <li class="nth-item">list7</li>
+        <li class="nth-item">list8</li>
+        <li class="nth-item">list9</li>
+        <li class="nth-item">list10</li>
+      </ul>
+    </section>
+    <section>---偽類選取器---
+      <div class="box">Div外層
+        <div>Div1</div>
+        <p>p1</p>
+        <p>p2</p>
+        <p>p3</p>
+      </div>    
+      <div class="box">        
+        <p>box2p1</p>
+        <p>box2p2</p>
+        <p>box2p3</p>
+      </div>
+    </section>
+    <section>---屬性選取器---
+    <input type="text">input欄位</input>
+    <a href="a">linkaaaa</a>
+    <a href="a">linkb</a>
+    <a href="a">linkc</a>
+    <a href="#">linkd重要的東西</a>
+    <img src="" alt="">
+    </section>
+    <section>
+      <div class="first-item">
+        最外層div
+        <div class="second-item">
+          中間層div
+          <div class="third-item" style="color: palevioletred">最內層div</div>
+        </div>
+      </div>
+      <input type="password">input密碼</input>
+    </section>
+    <section>
+      <div class="first-item-border">
+        最外層div border
+        <div class="second-item-border">
+          中間層div border
+          <div class="third-item-border">最內層div border</div>
+        </div>
+      </div>
+    </section>
+    <section>
+      ---使用"+"(會排除第一個)---
+      <ul class="list">
+        <li class="item">li1</li>
+        <li class="item">li2</li>
+        <li class="item">li3</li>
+        <li class="item">li4</li>
+        <li class="item border-none">li5</li>
+      </ul>
+    </section>
+    <section>
+      ---同層選取(使用"~" (同層皆適用))---
+      <h1>Title</h1>
+      <p>1.也可森林天下不見吸引現在我都經濟吃了或者，電話大多數，更好。</p>
+      <p>
+        2.用來我不至今智慧中港路不去植物年代對話轉帖男孩我還我不，國內斗內老公。
+      </p>
+      <p>3.頻道今後焦點確實，發揮依舊，適用雖然特別許多祝福初音一番姐。</p>
+      <div>
+        <p>div層裡面的p</p>
+      </div>
+    </section>
+    <section>
+      ---群組宣告&組合式宣告---
+      <div class="box1" id="box-id-1">box1</div>
+      <div class="box2">box2</div>
+      <div class="box3">box3</div>
+    </section>
+    <section class="news">
+      ---層疊式宣告---
+      <div class="card">card1</div>
+      <div class="card">card2</div>
+      <div class="card">card3</div>
+      <div class="card">card4</div>
+      <ul class="news-list">
+        <li class="news-list-item">1</li>
+        <a href="#">li裡面的a</a>
+        <li class="news-list-item">2</li>
+        <p class="card">li裡面的p</p>
+        <li class="news-list-item">3</li>
+      </ul>
+    </section>
+  </body>
+</html>

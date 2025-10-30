@@ -1,0 +1,189 @@
+section {
+  margin: 100px;
+}
+/*
+css 優先權:
+!important > inline style > ID >class/屬性選取器/偽類選取器 > Tag > * > 繼承
+css計分:
+tag : 1
+class/屬性選取器/偽類選取器 : 10
+ID : 100
+inline style : 1000
+!important : 10000
+*/
+
+a {
+  background-color: rgb(255, 255, 176);
+  padding: 20px;
+}
+
+/* 已訪問連結的樣式 */
+a:visited {
+  background-color: rgb(255, 0, 0);
+}
+/* 按tab鍵時聚焦的樣式 */
+a:focus {
+  background-color: rgb(92, 65, 65);
+}
+/* 游標經過時的樣式 */
+.link:hover {
+  background-color: rgb(176, 188, 255);
+}
+
+/* 正在變點擊時的樣式 不常用 */
+.link:active {
+  background-color: rgb(49, 49, 49);
+}
+
+/* 偽類選取器:not=>排除
+實務上不常用
+*/
+.nth-list .nth-item:not(.pp) {
+  color: rgb(255, 212, 95);
+}
+
+/* 偽類選取器:nth-child=第幾個小孩
+*/
+.nth-list .nth-item:nth-child(3) {
+  color: red;
+}
+
+/* n-3==>全部都有 n即可 */
+.nth-list .nth-item:nth-child(n + 5) {
+  background-color: grey;
+}
+
+.nth-list .nth-item:nth-child(odd) {
+  background-color: rgb(152, 209, 255);
+}
+
+/* 偽類選取器:first-child
+自己+下一層...
+*/
+div:first-child {
+  background-color: rgb(226, 125, 142);
+}
+
+/* 有"空格: "下一層的第一個小孩"應用 */
+/* div :first-child {
+  background-color: rgb(180, 253, 255);
+} */
+
+/* div p:first-child {
+  background-color: yellow;
+} */
+
+/* :first-of-type 
+同層裡的第一個*/
+/* .box :first-of-type {
+  background-color: brown;
+} */
+
+/* 屬性選取器[] 
+img[alt^="可愛"](^=開頭等於)
+、img[src$=".jpg"]($=結尾等於)
+、img[alt*="可愛"](*=包含文字)
+、img[alt~="fly"](~=包含英文單字)
+*/
+/* a[href] {
+  color: orange;
+}
+
+a[href^="#"] {
+  color: green !important;
+} */
+
+input[type="text"],
+input[type="password"] {
+  border-radius: 4px;
+  border: 1px solid rgb(255, 77, 77);
+}
+
+/* 
+子代選取器 只有"空格"沒有">" 自己+子代都應用
+*/
+.first-item div {
+  color: blueviolet;
+}
+
+/* 
+子代選取器  使用">" 只會適用子代(border樣式不會繼承)
+*/
+
+/* 11分 */
+.first-item-border > div {
+  border: 1px solid red;
+}
+
+/* 
+取消最後一行的格式
+.item {
+  border-bottom: 1px solid pink;
+}
+
+.border-none {
+  border: none;
+} */
+
+/* 
+親代選取器  使用"+"(會排除第一個) 
+上面code"不需要選取最後一個"的方法
+*/
+.item + .item {
+  border-top: 1px solid pink;
+}
+
+h1 + p {
+  color: blue;
+}
+
+/* 親代選取器  使用"~" (同層皆適用)
+ */
+h1 ~ p {
+  color: rgb(62, 255, 245);
+}
+
+#box-id-1 {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(173, 230, 191);
+}
+
+/* 群組宣告 */
+.box1,
+.box2 {
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+}
+
+/* 組合式宣告 (中間不能有空格)*/
+div.box3 {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(255, 176, 229);
+}
+div#box-id-1 {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(42, 80, 250);
+}
+
+/* 層疊式宣告  兩組效果相同*/
+/* .news-list li {
+  border: 1px solid red;
+} */
+
+.news-list .news-list-item {
+  border: 1px solid red;
+}
+
+.news-list a {
+  border: 1px solid red;
+}
+
+.news .card {
+  background-color: lightgreen;
+  width: 200px;
+  height: 200px;
+}
