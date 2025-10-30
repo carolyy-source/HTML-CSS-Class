@@ -1,0 +1,46 @@
+/* 1000px 4張卡片 */
+.card-holder {
+  width: 1000px;
+  margin: 0 auto;
+  background-color: rgb(196, 193, 193);
+  overflow: hidden;
+}
+
+.card {
+  background-color: rgb(255, 184, 231);
+  width: 168px;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #000;
+  /* 讓內容靠左移動(不換行) */
+  float: left;
+}
+
+.card-size {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  /* 固定圖片比例 */
+  /* height: 126px; */
+}
+
+/* 變化2.消除重複的間距 
+訂好margin=>調整width=>
+調整外容器(card-holder2)的padding&width
+*/
+
+.card2 {
+  background-color: rgb(255, 184, 231);
+  width: 183px;
+  margin: 20px 10px;
+  padding: 20px;
+  border: 1px solid #000;
+  /* 讓內容靠左移動(不換行) */
+  float: left;
+}
+
+.card-holder2 {
+  width: 980px;
+  padding: 10px;
+  background-color: rgb(196, 193, 193);
+  overflow: hidden;
+}

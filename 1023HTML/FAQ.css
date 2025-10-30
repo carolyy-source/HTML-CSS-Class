@@ -1,0 +1,39 @@
+/* 600px 左右置中 */
+
+section {
+  font-family: Arial;
+  width: 600px;
+  margin: 0 auto;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #13ab67;
+}
+
+.btn {
+  background-color: #13ab67;
+  font-size: 20px;
+  color: white;
+  padding: 5px;
+  border-radius: 1px;
+}
+
+.green {
+  color: #13ab67;
+}
+
+.text {
+  color: #626264;
+}
+.box {
+  background-color: rgb(240, 108, 240);
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+  margin: 10px auto;
+}
+.inbox {
+  background-color: rgb(255, 247, 170);
+  height: 100%;
+}
