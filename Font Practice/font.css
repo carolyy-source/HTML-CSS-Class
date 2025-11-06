@@ -1,0 +1,87 @@
+header {
+  /* border: solid black 1px; */
+  background-color: brown;
+}
+
+/* 背景圖片 預設repeat:圖片會填滿空間 */
+.bg-img {
+  background-color: rgba(159, 99, 255, 0.781);
+  height: 600px;
+  /* background-image: url(https://upload.wikimedia.org/wikipedia/zh/b/b7/Cinnamoroll_character.png),
+    linear-gradient(to left top, rgba(255, 150, 208, 0.774), rgb(255, 255, 255)); 
+  */
+  background-image: url(https://en.pimg.jp/115/142/266/1/115142266.jpg),
+    url(https://upload.wikimedia.org/wikipedia/zh/b/b7/Cinnamoroll_character.png);
+  background-size: 100px 100px, 300px 200px;
+  background-repeat: no-repeat;
+  background-position: 20px center, bottom 40px right 100px;
+  /*background-size: 100%; */
+}
+
+.bg-img2 {
+  height: 600px;
+  background: url(https://upload.wikimedia.org/wikipedia/zh/b/b7/Cinnamoroll_character.png)
+      repeat-x 20px center / 20%,
+    rgb(118, 163, 65);
+}
+
+/* 滑鼠靠近時的樣式  */
+a:hover {
+  border-bottom-width: 4px;
+  border-bottom-color: red;
+}
+
+nav {
+  margin: 0 auto;
+  width: 600px;
+  text-align: right;
+  /* 內容(button)的順序 
+  direction: rtl; */
+}
+
+nav a {
+  /* padding: 20px 10px; */
+  border: solid grey 1px;
+  border-radius: 10%;
+  background-color: rgb(211, 155, 83);
+  /* 行距 */
+  line-height: 64px;
+  /* Block會將元素寬度預設會撐到最大，使其占滿整個容器，不會留邊邊 */
+  display: inline-block;
+}
+
+section {
+  margin: 100px;
+}
+
+/* 匯入字型 */
+.momo-trust-display-regular {
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 64px;
+  /* 字體加粗 */
+  font-weight: 700;
+}
+
+.try {
+  font-size: 20px;
+  /* 底線: 位置.顏色.樣式 順序不限 */
+  text-decoration: wavy underline rgb(0, 0, 255);
+  /* 行距 */
+  line-height: 50px;
+}
+.space {
+  /* 
+letter-spacing for 英文字母+中文單字
+word-spacing for 英文字母 
+*/
+  background-color: tomato;
+  width: 300px;
+  text-align: justify;
+  letter-spacing: 20px;
+  /* word-spacing: 40px; */
+}

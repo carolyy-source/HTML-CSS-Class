@@ -1,0 +1,46 @@
+section {
+  margin: 100px;
+}
+
+.float-card:nth-child(even) h2 {
+  direction: rtl;
+}
+
+.float-card {
+  padding: 30px;
+  background-color: grey;
+}
+
+/* 圖片浮於上層，造成文繞圖
+但下層的size與圖片無關，會爆圖 */
+.float-img {
+  width: 220px;
+  float: left;
+}
+
+.float-card:nth-child(even) .float-img {
+  float: right;
+  margin-right: 0;
+  margin-left: 40px;
+}
+
+/* 爆圖時，在下層設定阻擋 */
+.clear {
+  clear: both;
+}
+
+.box-top {
+  width: 300px;
+  height: auto;
+}
+
+.inside-bigbox {
+  width: 180px 180px;
+  margin: 10px;
+  float: left;
+  background-color: blue;
+}
+
+.main-pic {
+  float: left;
+}
