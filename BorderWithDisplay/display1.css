@@ -1,0 +1,31 @@
+section {
+  margin: 100px;
+}
+
+/* box會直接接連顯示 */
+.box-wrap {
+  background-color: #afa;
+  display: flex;
+  /* 依據畫面大小換行 */
+  flex-wrap: wrap;
+  gap: 20px;
+  /* 從左到右改為從右到左 起點也從右邊開始*/
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+}
+
+.box {
+  width: 300px;
+  height: 200px;
+  font-size: 16px;
+}
+
+.box1 {
+  background-color: rgb(170, 227, 255);
+}
+.box2 {
+  background-color: #fa0;
+}
+.box3 {
+  background-color: #aaf;
+}

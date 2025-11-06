@@ -1,0 +1,30 @@
+section {
+  margin: 100px;
+}
+
+/* 消除box間的空格 */
+.box-wrap {
+  display: flex;
+  font-size: 0;
+}
+
+.box {
+  /* box間不換行 */
+  display: inline-block;
+  width: 200px;
+  font-size: 16px;
+}
+
+.box1 {
+  background-color: #0af;
+}
+.box2 {
+  /* 不顯示+不占空間 */
+  /* display: none; */
+  /* 不顯示+空間會留下 */
+  /* opacity: 0; */
+  background-color: #fa0;
+}
+.box3 {
+  background-color: #aaf;
+}
