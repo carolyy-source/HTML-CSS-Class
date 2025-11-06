@@ -1,0 +1,55 @@
+section {
+  font-size: 16px;
+}
+
+.container-header {
+  margin: 0 auto;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-bottom: 1px solid #dfdede; /* 用這個代替 hr */
+  padding: 0 50px;
+}
+
+.header-logo {
+  max-width: 70%;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  /* 控制導覽連結的間距 */
+}
+
+.header-bar {
+  color: rgb(119, 119, 119);
+  font-size: 15px;
+}
+
+.header-bar:hover {
+  color: rgb(255, 153, 0);
+}
+
+.header-link {
+  background-color: #da3743;
+  border-radius: 30px;
+  color: white;
+  padding: 10px;
+  line-height: 1;
+}
+
+.footer-container {
+  margin: 0 auto;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  padding: 0 50px;
+}
+
+.footer-declare {
+  padding: 15px 0 13px 0;
+  background-color: black;
+  color: rgb(119, 119, 119);
+}
