@@ -33,8 +33,8 @@ section {
   font-size: 15px;
 }
 
-.header-bar:hover {
-  color: rgb(255, 153, 0);
+.header-bar:hover{
+  color: rgb(255, 153, 0) !important;
 }
 
 .header-link {
@@ -46,22 +46,113 @@ section {
 }
 
 .footer-container {
-  margin: 0 auto;
-  width: 100%;
-  height: 90px;
+  background-color: #252932;
+  min-width: 100vw;
   display: flex;
-  align-items: center;
+  flex-direction: column; /* 垂直排列 */
+  align-items: stretch;  /* 讓子元素寬度撐滿 */
+  padding: 60px 0 20px 0;
+
+}
+
+.footer-information{
+  color: #e3e6ed;
+  display: flex;
+  justify-content: center;
+  gap:20px;
+  margin: 0 87px;
+}
+
+.foot-company,
+.foot-service,
+.foot-detail,
+.foot-social {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.foot-service{
+  background-color: #252932;
+  color: #e3e6ed;
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.block-a{
+  display: inline-block;
+  border-bottom: 1px solid #e3e6ed;
+}
+.current-a{
+  color:black;
+  border-bottom: 1px solid #e3e6ed;
+  padding: 10px 10px 10px 0;
+}
+.footer-a{
+  text-decoration: none;
+  color: #e3e6ed;
+  padding: 10px 10px 10px 0;
+}
+
+.footer-a:hover {
+  color: rgb(255, 153, 0); 
 }
 
 .foot-company {
   display: block;
 }
+.country{
+  font-weight: bold;
+}
+.address{
+  font-size:12.3px;
+}
+
+.foot-detail{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact {
+  display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.language {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.foot-social {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+
+}
+.social-a{
+    padding-top: 0;
+    /* 取消上方空白 */
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* 
+.default{
+  pointer-events: none; 
+  cursor: not-allowed;
+} */
+
+
 
 .footer-declare {
   width: 100%;
   padding: 15px 0 13px 0;
-  background-color: black;
-  color: rgb(119, 119, 119);
+  background-color: #191c23;
+  color: #9ea6b7;
   display: flex;
   justify-content: space-evenly;
   gap: 100px;
@@ -71,7 +162,10 @@ section {
   display: flex;
   justify-content: space-between;
   gap: 15px;
+  display: flex;
+  align-items:center;
 }
 .icon {
-  font-size: 20px;
+  font-size: 22px;
+  color:grey;
 }
