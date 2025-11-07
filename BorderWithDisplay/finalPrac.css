@@ -1,14 +1,29 @@
+body{
+  background-color: #e2e2e2;
+}
 section {
+  background-color: white;
+  border-radius: 8px;
+  display:flex;
+  justify-content: center;      
+  min-height: 100vh;            /* 讓 body 佔滿整個畫面高度 */
   width: 1200px;
   font-size: 16px;
+  margin: 0;                    /* 移除預設邊距 */
+  padding:10px
 }
 .container {
+  margin:0 auto;
   /* background-color: grey; */
   padding: 16px 3px;
+  /* border: solid lightgray; */
+  display:flex;
+  flex-direction: column;
 }
 
 p {
   font-size: 22px;
+  font-weight: bold;
 }
 
 i {
@@ -18,21 +33,37 @@ i {
   color: grey;
 }
 
+.link-control {
+  display: flex;
+  gap: 10px;            
+  margin-bottom: 20px;  
+  flex-wrap: wrap;      
+}
+
 .classify {
   background-color: #fff;
-  margin: 15px;
+  color:grey;
+  margin: 15px 0;
   height: 20px;
-  padding: 5px;
+  padding: 5px 10px;
+  border: 1px solid lightgray;
   border-radius: 10%;
+  text-decoration: none;
 }
 
 .company-container {
   width: 1152px;
+  display:flex;
+  flex-direction: column;   
+  gap: 20px;  /* 每個 company-block 之間的距離 */
+
 }
 
 .company-block {
-  display: flex;
-  gap: 20px;
+  display:flex;
+  flex-wrap: nowrap;  /* 不換行 */
+  box-sizing: border-box;
+  gap: 20px; 
 }
 
 .each-company {
@@ -40,7 +71,8 @@ i {
   border: 1px solid lightgray;
   border-radius: 8px;
   padding: 16px;
-  flex-basis: 25%;
+  flex: 1 1 calc(25% - 20px);              /* 固定 4 欄寬度，不隨內容撐開 */
+  box-sizing: border-box;
 }
 
 .top-part {
@@ -60,6 +92,12 @@ img {
 
 .job {
   color: grey;
+  border: 1px solid lightgray;
+  padding: 3px;
+}
+
+.job-classify {
+  display: flex;
 }
 
 .job-link {
