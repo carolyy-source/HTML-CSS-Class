@@ -1,0 +1,76 @@
+section {
+  margin: 100px;
+}
+header {
+  background-color: rgb(179, 179, 179);
+}
+.navbar {
+  font-size: 16px;
+  margin: 0 auto;
+  max-width: 1024px;
+  /* height: 75px; */
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-control {
+  width: 100px;
+  aspect-ratio: 4 / 3;
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.link-control {
+  display: flex;
+  gap: 10px;
+}
+
+.link {
+  background-color: pink;
+  /* 此段可以由 "父層display: flex"達成
+  display: inline-block;
+  height: 100%; */
+}
+
+button {
+  background-color: rgb(255, 153, 0);
+  border-radius: 50%; /* 變成圓形 */
+  width: 75px;
+  line-height: 75px;
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.main {
+  display: flex;
+}
+
+.sidebar {
+  background-color: rgb(12, 10, 131);
+  width: 15%;
+  min-height: 100vh;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.a-link {
+  margin: 0;
+  padding: 0 10px;
+  background-color: rgb(219, 213, 200);
+  border-radius: 8px;
+  height: 20px;
+}
+
+.box {
+  background-color: rgb(217, 175, 255);
+  min-width: 200px;
+  max-width: 800px;
+}

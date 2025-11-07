@@ -2,7 +2,7 @@ section {
   margin: 100px;
 }
 
-/* 消除box間的空格 */
+/* 消除"下層box"間的空格 */
 .box-wrap {
   display: flex;
   font-size: 0;

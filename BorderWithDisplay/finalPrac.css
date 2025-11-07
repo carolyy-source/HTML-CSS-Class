@@ -1,0 +1,69 @@
+section {
+  width: 1200px;
+  font-size: 16px;
+}
+.container {
+  /* background-color: grey; */
+  padding: 16px 3px;
+}
+
+p {
+  font-size: 22px;
+}
+
+i {
+  color: orange;
+}
+.icon {
+  color: grey;
+}
+
+.classify {
+  background-color: #fff;
+  margin: 15px;
+  height: 20px;
+  padding: 5px;
+  border-radius: 10%;
+}
+
+.company-container {
+  width: 1152px;
+}
+
+.company-block {
+  display: flex;
+  gap: 20px;
+}
+
+.each-company {
+  /* background-color: lightgoldenrodyellow; */
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  padding: 16px;
+  flex-basis: 25%;
+}
+
+.top-part {
+  display: flex;
+  gap: 16px;
+}
+
+img {
+  width: 100px;
+  aspect-ratio: 1 / 1;
+  border-radius: 8px;
+}
+.title {
+  color: rgb(12, 12, 138);
+  font-weight: bold;
+}
+
+.job {
+  color: grey;
+}
+
+.job-link {
+  color: orange;
+  display: flex;
+  justify-content: center;
+}

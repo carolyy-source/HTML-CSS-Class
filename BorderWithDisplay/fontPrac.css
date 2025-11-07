@@ -1,0 +1,66 @@
+section {
+  margin: 0 auto;
+  font-size: 16px;
+}
+
+.card-wrap {
+  display: flex;
+  /* flex-direction: column; */
+}
+
+.card {
+  height: 100px;
+  /* width: 33.33%; */
+
+  /* 主軸的單位(此處為寬度) */
+  flex-basis: 33.33%;
+
+  /* flex-grow延展比=剩餘空間/子grow總份數*grow份數 */
+  flex-grow: 1;
+
+  /* flex-shrink伸縮比=超過空間/子shrink總份數*shrink伸縮比 */
+}
+
+.card1 {
+  background-color: #ff9292;
+  flex-grow: 1;
+  /* flex-shrink: 2; */
+}
+
+.card2 {
+  background-color: #e04444;
+}
+
+.card3 {
+  background-color: #684040;
+}
+
+/* box會接連顯示 */
+.box-wrap {
+  background-color: rgba(199, 255, 199, 0.37);
+  display: flex;
+  flex-wrap: wrap;
+  height: 600px;
+  /* align-items次軸對齊單個子物件,預設為:跟父層同高 */
+  /* align-items: center; */
+  align-content: center;
+}
+
+.box {
+  width: 300px;
+}
+
+.box1 {
+  background-color: rgb(170, 227, 255);
+  /* order: 3; */
+  /* order相同時，會按照本來文檔順序 */
+}
+.box2 {
+  background-color: #fa0;
+  /* align-self: end; */
+  /* order: 2; */
+}
+.box3 {
+  background-color: #aaf;
+  /* order: 1; */
+}
