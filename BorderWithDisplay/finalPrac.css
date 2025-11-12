@@ -1,19 +1,23 @@
+:root {
+  /* 設定在此,後續使用就不用考慮作用域 */
+  --default-color: rgb(116, 177, 116);
+  --size: 16px;
+}
+
 body {
-  background-color: #e2e2e2;
-  margin: 0;
+  background-color: #f8f8f8;
   font-family: sans-serif;
-  display: flex;
-  justify-content: center; /* 水平置中 section */
-  min-height: 100vh; /* 讓 body 佔滿整個畫面高度 */
+  background-color: var(--default-color);
 }
 section {
   background-color: white;
+  margin: 0 auto;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
-  width: 1200px;
+  max-width: 1200px;
   font-size: 16px;
-  padding: 10px;
+  padding: 16px 32px;
 }
 .container {
   margin: 0 auto;
@@ -23,9 +27,8 @@ section {
   display: flex;
   flex-direction: column;
 }
-
-p {
-  font-size: 22px;
+h2 {
+  font-size: 20px;
   font-weight: bold;
 }
 
@@ -47,37 +50,40 @@ i {
   background-color: #fff;
   color: grey;
   margin: 15px 0;
-  height: 20px;
-  padding: 5px 10px;
+  padding: 8px 16px;
   border: 1px solid lightgray;
-  border-radius: 10px;
+  border-radius: 4px;
   text-decoration: none;
 }
 
 .company-container {
   width: 1152px;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 20px; /* 每個 company-block 之間的距離 */
+  gap: 20px; /* 每個 company-4column 之間的距離 */
 }
 
-.company-block {
+.company-4cols {
   display: flex;
   flex-wrap: nowrap; /* 不換行 */
   box-sizing: border-box;
   gap: 20px;
+  width: 100%;
 }
 
 .each-company {
+  flex: 1 1 calc((100% - 60px) / 4);
+  /* 4 欄減掉三個 gap (3 × 20px) */
+  box-sizing: border-box;
   border: 1px solid lightgray;
   border-radius: 10px;
   padding: 16px;
-  flex: 1 1 calc(25% - 20px); /* 固定 4 欄寬度，不隨內容撐開 */
-  box-sizing: border-box;
 }
 
 .top-part {
   display: flex;
+  align-items: center;
   gap: 16px;
 }
 
@@ -85,21 +91,42 @@ img {
   width: 100px;
   aspect-ratio: 1 / 1;
   border-radius: 10px;
-}
-.title {
-  color: rgb(12, 12, 138);
-  font-weight: bold;
+  flex-shrink: 0;
 }
 
+.title {
+  color: #165489;
+  font-weight: bold;
+}
+p {
+  font-size: 16px;
+  font-weight: 100;
+}
 .job {
   color: grey;
   border: 1px solid lightgray;
   padding: 3px;
   border-radius: 10px;
+  flex: 0 0 auto; /* ✅ 每個 job 保持原本寬度，不被壓縮 */
 }
 
 .job-classify {
   display: flex;
+  flex-wrap: nowrap;
+  gap: 5px;
+  overflow-x: auto; /* ✅ 超出時可以水平滾動 */
+  overflow-y: hidden; /* 隱藏垂直滾動條 */
+  padding-bottom: 4px; /* 給一點空間避免滾動條擋到 */
+  -webkit-overflow-scrolling: touch; /* ✅ 手機滑動更順暢 */
+}
+
+/* 滾動條的樣式 */
+.job-classify::-webkit-scrollbar {
+  height: 6px;
+}
+.job-classify::-webkit-scrollbar-thumb {
+  background-color: lightgray;
+  border-radius: 3px;
 }
 
 .job-link {
