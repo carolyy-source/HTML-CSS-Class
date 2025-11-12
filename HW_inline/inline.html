@@ -44,9 +44,9 @@
       <div class="guide-background">
         <div class="guide-container">
           <div class="guide-title">
-            <h1 class="Chi-word">
-              接待，
-              <span style="color: #ff6337">不再手忙腳亂</span>
+            <h1>
+              <span class="Chi-word">接待，</span>
+              <span class="Chi-word" style="color: #ff6337">不再手忙腳亂</span>
               <span class="Eng-word">Reception, no longer a hassle</span>
             </h1>
           </div>
@@ -136,18 +136,166 @@
       </div>
     </section>
 
-    <!-- 候位管理 -->
-    <section></section>
-
-    <!-- 顧客管理 -->
-    <section></section>
+    <!-- 候位管理&顧客管理 -->
+    <section>
+      <div class="reserve-backgroung">
+        <div>候位管理</div>
+        <div>顧客管理</div>
+      </div>
+    </section>
 
     <!-- 合作夥伴 -->
     <!-- block+hidden -->
     <section></section>
 
     <!-- 招商 -->
-    <section></section>
+    <section>
+      <div class="business-background">
+        <div>上方文字</div>
+        <div class="form-cover">
+          <form class="question" action="#" method="post">
+            <section class="question-wording">
+              <div class="top-text">
+                <h1>Hi 餐廳老闆</h1>
+                <div>此表單為提供餐廳試用系統，</div>
+                <div style="color: red">我們無法提供代訂服務</div>
+                <div>
+                  消費者訂位、訂餐請 >
+                  <a style="color: rgb(1, 23, 151)" href="">查詢附近餐廳</a>
+                </div>
+                <div>現在申請可享 14 天免費試用＋專人導入教學</div>
+                <div class="underline">
+                  快讓 inline app 成為您餐廳的最佳助手！
+                </div>
+              </div>
+            </section>
+            <fieldset>
+              <div>
+                <label for="username">聯絡人姓名（必填）</label>
+                <input
+                  class="username"
+                  type="text"
+                  placeholder="e.g. Mayer"
+                  required
+                />
+              </div>
+            </fieldset>
+            <fieldset>
+              <div>
+                <label for="cellphone">手機號碼（必填）</label>
+                <input
+                  class="cellphone"
+                  type="number"
+                  placeholder="e.g. 856337XXX"
+                  required
+                />
+              </div>
+            </fieldset>
+            <fieldset>
+              <div>
+                <label for="email">電子信箱（必填）</label>
+                <input
+                  class="email"
+                  type="email"
+                  placeholder="e.g. welcome@inline.app"
+                  required
+                />
+              </div>
+            </fieldset>
+            <fieldset>
+              <div>
+                <label for="restaurentname">您的餐廳名稱（必填）</label>
+                <input
+                  class="restaurentname"
+                  type="text"
+                  placeholder="e.g. Mayer"
+                  required
+                />
+              </div>
+            </fieldset>
+            <fieldset>
+              <div>
+                <label for="restaurentcountry">您餐廳的所在國家（必填）</label>
+                <select name="preference" id="restaurentcountry" required>
+                  <option disabled selected style="display: none">
+                    請選擇國家
+                  </option>
+                  <option value="japan">日本</option>
+                  <option value="korea">韓國</option>
+                  <option value="frence">法國</option>
+                  <option value="british">英國</option>
+                  <option value="swiss">瑞士</option>
+                  <option value="canada">加拿大</option>
+                  <option value="usa">美國</option>
+                  <option value="agentina">阿根廷</option>
+                  <option value="brazil">巴西</option>
+                </select>
+              </div>
+            </fieldset>
+            <fieldset>
+              <div>
+                <label for="location">您餐廳的所在地址（必填）</label>
+                <input class="location" type="text" required />
+              </div>
+            </fieldset>
+            <fieldset>
+              <div>
+                <label for="position">您的職稱（必填）</label>
+                <input class="position" type="text" required />
+              </div>
+            </fieldset>
+            <fieldset>
+              <div>
+                <label for="experience"
+                  >是否有使用過其他訂候位管理系統？（必填）</label
+                >
+                <input class="experience" type="text" required />
+              </div>
+            </fieldset>
+            <fieldset>
+              <div>
+                <label for="interest">
+                  您對 inline 的哪個功能有興趣？（必填）</label
+                >
+                <select name="interest" id="restaurentcountry" required>
+                  <option disabled selected style="display: none" value="japan">
+                    請選擇
+                  </option>
+                  <option value="no">--None--</option>
+                  <option value="bookingservice">訂候位管理</option>
+                  <option value="takeoutservice">外帶外送服務</option>
+                  <option value="manyinterest">兩者皆有興趣</option>
+                </select>
+              </div>
+            </fieldset>
+            <fieldset>
+              <div>
+                <label for="source"
+                  >您是從哪裡獲得inline的資訊？（必填）
+                </label>
+                <select name="source" id="restaurentcountry" required>
+                  <option disabled selected style="display: none" value="japan">
+                    請選擇
+                  </option>
+                  <option value="no">--None--</option>
+                  <option value="google">Google搜尋</option>
+                  <option value="socialMedia">社群媒體</option>
+                  <option value="website">網站廣告</option>
+                  <option value="friend">朋友介紹</option>
+                  <option value="otherRes">其他餐廳</option>
+                  <option value="opentable">Opentable</option>
+                  <option value="linkedin">Linkedin</option>
+                  <option value="offline">線下活動</option>
+                  <option value="inlineCall">inline專人電洽</option>
+                </select>
+              </div>
+            </fieldset>
+            <button class="submit-button" type="submit">送出</button>
+          </form>
+        </div>
+        <div>下方資訊</div>
+      </div>
+    </section>
 
     <!-- ================= FOOTER START ================= -->
     <section>

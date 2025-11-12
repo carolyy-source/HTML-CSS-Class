@@ -2,9 +2,13 @@
 https://cdnjs.com/libraries/font-awesome/6.7.2 */
 /* 
 https://fontawesome.com/v6/search?o=r */
-
+:root {
+  --themeColor: #ec6300;
+  --themeVerseColor: #064c8c;
+}
 section {
   font-size: 16px;
+  min-width: 1vh;
 }
 
 .container-header {
@@ -65,6 +69,7 @@ section {
 }
 .guide-title {
   margin-top: 100px;
+  font-size: 0;
 }
 .guide-context {
   margin: 60px 60px 80px 100px;
@@ -88,11 +93,11 @@ section {
   font-size: 13px;
   text-decoration: none;
   text-transform: uppercase;
-  background-color: #064c8c;
+  background-color: var(--themeVerseColor);
   color: white;
-  border: 1px solid #064c8c;
+  border: 1px solid var(--themeVerseColor);
   border-radius: 8px;
-  padding: 10px 12px;
+  padding: 10px 25px;
   margin: 0 5px 5px 0;
 }
 
@@ -130,7 +135,7 @@ section {
 }
 
 .introduce-org {
-  color: #ec6300;
+  color: var(--themeColor);
   font-size: 27px;
 }
 
@@ -174,6 +179,65 @@ section {
   width: 100%;
   height: 500px;
   /* background-color: grey; */
+}
+
+.reserve-background {
+  background-image: url("https://inline.company/wp-content/uploads/2024/07/New-official-website_v2_hp_background2.png");
+  background-size: cover; /* 填滿容器 */
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  width: 100vw;
+  min-height: auto;
+}
+
+.business-background {
+  background-image: url("https://inline.company/wp-content/uploads/2024/07/New-official-website_v2_form_background.png");
+  background-repeat: no-repeat;
+  background-position: center center; /* 置中 */
+  background-size: cover; /* 填滿容器 */
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh; /* 讓 body 高度等於視窗高度 */
+  padding-top: 56.25%; /* 1080/1920 = 0.5625 -> 56.25% */
+  position: relative;
+
+  /* 
+  
+  width: 100%; /* 滿版寬度 
+  /* 維持圖片比例，假設圖片是 1920x1080 
+  padding-top: 56.25%; /* 1080/1920 = 0.5625 -> 56.25% 
+  background-image: url("https://inline.company/wp-content/uploads/2024/07/New-official-website_v2_form_background.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain; /* 完整顯示圖片 
+  position: relative; */
+}
+
+.form-cover {
+  width: 33%;
+  margin: 0 auto;
+}
+
+form {
+  width: 100%;
+  background-color: white;
+  border: 1px solid lightgray;
+  position: absolute;
+  top: 50%; /* 上邊距到畫面中間 */
+  left: 50%; /* 左邊距到畫面中間 */
+  transform: translate(-50%, -50%); /* 將自身中心對齊 */
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.submit-button {
+  background-color: var(--themeColor);
+  color: white;
 }
 
 .footer-container {
@@ -228,7 +292,7 @@ section {
 }
 
 .footer-a:hover {
-  color: rgb(255, 153, 0);
+  color: var(--themeColor);
 }
 
 .foot-company {
