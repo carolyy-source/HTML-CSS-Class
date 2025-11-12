@@ -1,13 +1,27 @@
 :root {
   /* 設定在此,後續使用就不用考慮作用域 */
-  --default-color: rgb(116, 177, 116);
+  --default-color: rgb(73, 185, 223);
   --size: 16px;
+}
+.box {
+  width: 300px;
+  height: 300px;
+  background-color: var(--default-color);
+  /* 內容超過時，會自動產生滾輪 */
+  overflow: auto;
+  border-radius: 8px;
+  box-shadow: 10px 10px 5px 10px rgb(195, 223, 233);
+}
+.object {
+  width: 300px;
+  height: 300px;
+  /* 不改變比例但填滿容器 */
+  object-fit: cover;
 }
 
 body {
   background-color: #f8f8f8;
   font-family: sans-serif;
-  background-color: var(--default-color);
 }
 section {
   background-color: white;
