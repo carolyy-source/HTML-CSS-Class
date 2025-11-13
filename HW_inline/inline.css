@@ -153,20 +153,36 @@ section {
   width: 100vw;
   min-height: 100vh;
 }
-.booking {
+.booking,
+.customer {
   display: flex;
   justify-content: center;
+  margin: 70px auto;
   width: 100%;
   gap: 10px;
 }
 
-.booking-left {
+.reserve {
   display: flex;
   justify-content: center;
+  align-items: center;
+  margin: 70px 50px;
+  width: 100%;
+  gap: 10px;
+}
+
+.booking-left,
+.customer-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
 }
 
-.booking-right {
+.reserve-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
   width: 100%;
 }
 
@@ -181,11 +197,119 @@ section {
   /* background-color: grey; */
 }
 
+.booking-right,
+.customer-right {
+  width: 100%;
+  margin: 30px auto;
+  padding-top: 50px;
+  position: relative;
+}
+
+.reserve-left {
+  width: 100%;
+  margin: 30px -40px 30px auto;
+  padding-top: 50px;
+  position: relative;
+}
+
+.booking-title,
+.customer-title {
+  color: var(--themeVerseColor);
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 70px 0;
+  position: absolute;
+  left: 80px;
+  top: 0px;
+}
+
+.reserve-title {
+  color: var(--themeVerseColor);
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 70px 0;
+  position: absolute;
+  left: 185px;
+  top: 0px;
+}
+
+.boooking-infor,
+.customer-infor {
+  margin: 30px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.reserve-infor {
+  width: 80%;
+  margin: 30px 0 30px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 50px;
+}
+
+.booking-detail,
+.reserve-detail,
+.customer-detail {
+  display: flex;
+  gap: 50px;
+}
+
+.detail-icon {
+  width: 50px;
+  font-size: 44px;
+  font-weight: 100;
+}
+
+.booking-context,
+.reserve-context,
+.customer-context {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.booking-context h3,
+.reserve-context h3,
+.customer-context h3 {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.booking-context p,
+.reserve-context p,
+.customer-context p {
+  font-size: 16px;
+}
+.reserve-img {
+  background-image: url("https://inline.company/wp-content/uploads/2023/12/New-official-website_v2_%E5%80%99%E4%BD%8D%E7%AE%A1%E7%90%86_TC.png");
+  background-size: 75%;
+  /* 圖片大小 */
+  background-position: left;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  width: 100%;
+  height: 500px;
+}
+
+.customer-img {
+  background-image: url("https://inline.company/wp-content/uploads/2023/12/New-official-website_v2_%E9%A1%A7%E5%AE%A2%E7%AE%A1%E7%90%86_TC.png");
+  background-size: 75%;
+  background-position: right;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  width: 100%;
+  height: 500px;
+}
+
 .reserve-background {
+  /* background-color: rgb(192, 11, 11); */
   background-image: url("https://inline.company/wp-content/uploads/2024/07/New-official-website_v2_hp_background2.png");
   background-size: cover; /* 填滿容器 */
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   overflow: hidden;
   width: 100vw;
   min-height: auto;
@@ -194,16 +318,13 @@ section {
 .business-background {
   background-image: url("https://inline.company/wp-content/uploads/2024/07/New-official-website_v2_form_background.png");
   background-repeat: no-repeat;
-  background-position: center center; /* 置中 */
-  background-size: cover; /* 填滿容器 */
+  background-position: auto center;
+  background-size: cover;
   overflow: hidden;
-  width: 100vw;
-  height: 100vh; /* 讓 body 高度等於視窗高度 */
-  padding-top: 56.25%; /* 1080/1920 = 0.5625 -> 56.25% */
-  position: relative;
-
+  width: 100%;
+  min-height: auto;
+  /* 讓 body 高度等於視窗高度 */
   /* 
-  
   width: 100%; /* 滿版寬度 
   /* 維持圖片比例，假設圖片是 1920x1080 
   padding-top: 56.25%; /* 1080/1920 = 0.5625 -> 56.25% 
@@ -214,25 +335,101 @@ section {
   position: relative; */
 }
 
+.business-header {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+}
+
+.business-word {
+  color: var(--themeColor);
+  font-size: 30px;
+  font-weight: bold;
+  height: 50px;
+  margin: 0 auto;
+}
+
+.business-p {
+  font-size: 18px;
+  height: 60px;
+  margin: 50px auto;
+}
+
 .form-cover {
-  width: 33%;
+  width: 100%;
+  min-height: 100vh;
   margin: 0 auto;
 }
 
 form {
   width: 100%;
   background-color: white;
-  border: 1px solid lightgray;
-  position: absolute;
-  top: 50%; /* 上邊距到畫面中間 */
-  left: 50%; /* 左邊距到畫面中間 */
-  transform: translate(-50%, -50%); /* 將自身中心對齊 */
-  width: 33%;
+  margin: 0 auto;
+  width: 50%;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-content: center;
   padding: 20px;
   border-radius: 8px;
+}
+
+.question {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+}
+
+.top-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+  gap: 5px;
+}
+.top-text h1 {
+  font-size: 27px;
+  color: var(--themeVerseColor);
+  font-weight: bold;
+  margin: 20px 0;
+}
+.top-text div {
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.top-text p {
+  font-size: 16px;
+  color: black;
+}
+.underline {
+  margin-bottom: 40px;
+}
+
+.question-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+form label {
+  display: block; /* 讓 label 變成區塊元素 */
+  font-size: 16px;
+  text-align: center;
+  width: 100%;
+}
+
+form input,
+form select {
+  border: 1px solid lightgray;
+  width: 350px; /* 固定寬度 */
+  height: 40px;
+  margin: 0 auto;
 }
 
 .submit-button {
@@ -343,12 +540,6 @@ form {
   margin-top: 0;
   margin-bottom: 20px;
 }
-
-/* 
-.default{
-  pointer-events: none; 
-  cursor: not-allowed;
-} */
 
 .footer-declare {
   width: 100%;
