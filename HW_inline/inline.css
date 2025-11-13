@@ -6,9 +6,16 @@ https://fontawesome.com/v6/search?o=r */
   --themeColor: #ec6300;
   --themeVerseColor: #064c8c;
 }
+
+::selection {
+  background: var(--themeColor);
+  color: white;
+}
+
 section {
   font-size: 16px;
   min-width: 1vh;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .container-header {
@@ -61,7 +68,7 @@ section {
 
 .guide-container {
   padding: 0 20px;
-  margin-left: 100px;
+  margin-left: 350px;
   /* margin-top: 120px; */
   display: flex;
   flex-direction: column;
@@ -400,14 +407,15 @@ form {
   font-size: 16px;
   color: black;
   font-weight: bold;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
-.top-text p {
-  font-size: 16px;
-  color: black;
-}
+
 .underline {
-  margin-bottom: 40px;
+  font-size: 16px;
+  line-height: 30px;
+  color: black;
+  margin-top: 30px;
+  margin-bottom: 80px;
 }
 
 .question-area {
@@ -419,6 +427,7 @@ form {
 
 form label {
   display: block; /* 讓 label 變成區塊元素 */
+  height: 40px;
   font-size: 16px;
   text-align: center;
   width: 100%;
@@ -428,13 +437,97 @@ form input,
 form select {
   border: 1px solid lightgray;
   width: 350px; /* 固定寬度 */
-  height: 40px;
+  height: 50px;
   margin: 0 auto;
 }
-
+.submit-check {
+  margin-top: 10px;
+  height: 80px;
+  font-size: 60px;
+  font-weight: 100;
+}
 .submit-button {
+  margin: 20px auto;
+  padding: 14px 20px;
+  width: 120px;
+  height: 40px;
+  text-align: center;
   background-color: var(--themeColor);
   color: white;
+  border-radius: 20px;
+  display: flex; /* 讓內容成為 flex item 調整置中*/
+  justify-content: center;
+  align-items: center;
+}
+
+.business-notice {
+  font-size: 10px;
+  margin-bottom: 40px;
+}
+
+.business-bottom {
+  margin: 80px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+.business-ending {
+  font-size: 32px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.business-a {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px 30px;
+  background-color: var(--themeVerseColor);
+  color: white;
+  border-radius: 20px;
+  margin-bottom: 80px;
+}
+
+.business-footer {
+  width: 100%;
+  display: flex;
+  font-weight: bold;
+  justify-content: center;
+}
+.bottom-infor {
+  width: 25%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 水平置中所有子元素 */
+  text-align: center; /* 讓文字內容也置中 */
+  gap: 50px;
+}
+.infor-left {
+  border-right: 1px solid lightgray;
+}
+.bottom-detail {
+  font-size: 22px;
+}
+.bottom-context {
+  font-size: 15px;
+  font-weight: 100;
+}
+
+.bottom-tel {
+  font-size: 24px;
+}
+.bottom-trial {
+  display: inline-block;
+  padding: 20px 13px;
+  background-color: var(--themeColor);
+  color: white;
+  border-radius: 10px;
+  font-size: 13px;
+  height: 20px;
+  display: flex; /* 讓內容成為 flex item 調整置中*/
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-container {
@@ -447,17 +540,19 @@ form select {
 }
 
 .footer-information {
-  width: 100%;
+  width: 80%;
   color: #e3e6ed;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   gap: 10px;
-  padding-left: 140px;
-  margin: 0 87px;
+  margin: 0 auto;
 }
 
-.foot-company,
-.foot-service,
+.foot-service {
+  flex: 1;
+  padding: 0 10px;
+}
+
 .foot-detail,
 .foot-social {
   flex: 1;
@@ -498,10 +593,14 @@ form select {
   /* flex-wrap: wrap; */
   padding-bottom: 20px;
   gap: 25px;
+  margin: 0 50px;
+  box-sizing: border-box; /* padding 不會額外增加寬度 */
 }
+
 .logo_nation img {
   display: block;
   margin-bottom: 20px;
+  max-width: 100%;
 }
 .country {
   font-weight: bold;
