@@ -1,0 +1,23 @@
+header {
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #cccccc;
+}
+
+main {
+  margin-top: 64px;
+}
+
+nav {
+  position: sticky;
+  padding: 10px;
+  background-color: #faa;
+  top: 64px;
+}
+
+.sec2 {
+  background-color: #b2edff;
+}

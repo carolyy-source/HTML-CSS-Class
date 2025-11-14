@@ -1,5 +1,14 @@
+section {
+  margin: 20px auto;
+  width: 960px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
 .item {
-  width: 300px;
+  width: 225px;
   margin: 0 auto;
   border: 1px solid grey;
   border-radius: 8px;
@@ -10,27 +19,36 @@
   width: 100%;
   aspect-ratio: 4/3;
   object-fit: cover; /* 圖片維持比例並裁切 */
+  border-radius: 8px;
 }
 
 .sale-tag {
   padding: 0 8px;
   font-weight: 100;
-  background-color: rgb(218, 14, 14);
+  background-color: rgb(17, 14, 218);
   color: aliceblue;
   border-radius: 2px;
   position: absolute;
   top: 20px;
   left: -10px;
 }
-.discount-tag {
+
+.discount-tag::after {
+  content: "HOT!";
   padding: 0 8px;
-  font-weight: 100;
-  background-color: rgb(255, 255, 99);
-  color: red;
+  font-weight: 500;
+  background-color: rgb(255, 0, 0);
+  color: white;
   border-radius: 2px;
   position: absolute;
-  top: 0px;
+  top: 10px;
   right: 0px;
+
+  /* 梯形形狀（上窄下寬） */
+  clip-path: polygon(0 0, 51% 0, 100% 48%, 100% 100%);
+
+  /* 旋轉角度 */
+  transform: rotate(45deg);
 }
 
 .information {

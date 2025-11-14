@@ -1,0 +1,89 @@
+h1 {
+  font-size: 36px;
+  font-size: bold;
+  text-align: center;
+}
+
+/* 偽元素:: 
+預設 inline、
+必須有content、
+不能放在自閉合元素上 (img)
+*/
+
+section {
+  margin: 50px;
+  position: relative;
+}
+
+.lesson {
+  font-size: 48px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.lesson::after {
+  content: "___";
+  color: red;
+  position: absolute;
+  top: 20px;
+  /* left: 63px; */
+  left: 50%;
+  transform: translateX(-50%);
+}
+.login {
+  position: relative;
+}
+.btn {
+  padding: 20px;
+  background-color: lightgoldenrodyellow;
+}
+
+.tooltip:hover::before {
+  content: "點擊即表同意隱私政策";
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background-color: red;
+  border-radius: 10px;
+  color: white;
+  padding: 5px;
+}
+
+.tooltip:hover::after {
+  content: "";
+  border-top: 8px solid red;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  position: absolute;
+  top: -6px;
+}
+
+.title2::before {
+  content: "✿";
+  color: pink;
+}
+
+.title::before {
+  content: "這是before";
+  color: orange;
+}
+
+.title::after {
+  content: "這是after";
+  color: greenyellow;
+}
+
+.box {
+  width: 200px;
+  border-top: 200px solid transparent;
+  border-bottom: 200px solid rgb(99, 35, 35);
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+}
+
+.clip {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(120, 224, 198);
+  clip-path: polygon(54% 85%, 86% 61%, 100% 100%, 0 100%, 22% 56%);
+}
