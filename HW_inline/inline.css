@@ -5,18 +5,17 @@ https://fontawesome.com/v6/search?o=r */
 
 /*待調整
 1.
-header的超連結==>應該要覆蓋更多的範圍
+header的超連結==>應該要覆蓋更多的範圍 V
 2.
 最上方的margin-left ==>依據上方banner=1160
 max-width=1160;
-margin: 0 auto;
+margin: 0 auto;   V
 3.
 display: flex;
 flex-direction: column;--->+gap調整間距
-有時候可以由margin來調整間距
+有時候可以不用flex,由margin來調整間距 V
 4.
-section>div.class ==> section.class
-
+section>div.class ==> section.class V
 
 */
 
@@ -30,7 +29,7 @@ section>div.class ==> section.class
   color: white;
 }
 
-section {
+body {
   font-size: 16px;
   min-width: 1vh;
   font-family: Arial, Helvetica, sans-serif;
@@ -58,13 +57,18 @@ header {
 .header-nav {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 35px;
+  height: 100%;
   /* 控制導覽連結的間距 */
 }
 
 .header-bar {
+  display: flex;
+  align-items: center;
+  margin: auto 0;
   color: rgb(119, 119, 119);
   font-size: 15px;
+  height: 100%;
   text-decoration: none;
 }
 
@@ -91,9 +95,9 @@ header {
 }
 
 .guide-container {
+  max-width: 1160px;
+  margin: 0 auto;
   padding: 0 20px;
-  margin-left: 350px;
-  /* margin-top: 120px; */
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -108,6 +112,10 @@ header {
 .Chi-word {
   font-size: 44px;
   font-weight: bold;
+}
+
+.org-word {
+  color: #ff6337;
 }
 .Eng-word {
   display: block; /* 讓它獨佔一行 */
@@ -130,6 +138,7 @@ header {
   border-radius: 8px;
   padding: 10px 25px;
   margin: 0 5px 5px 0;
+  align-self: self-start;
 }
 
 .global-background {
@@ -143,7 +152,8 @@ header {
 }
 
 .global-inside {
-  padding-left: 120px;
+  max-width: 1160px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center; /* 主軸置中 */
@@ -152,7 +162,6 @@ header {
 }
 
 .global-word {
-  padding-left: 50px;
   color: #333333;
   font-size: 17px;
   line-height: 35px;
@@ -299,7 +308,6 @@ header {
 .customer-context {
   display: flex;
   flex-direction: column;
-  gap: 10px;
 }
 
 .booking-context h3,
@@ -307,6 +315,7 @@ header {
 .customer-context h3 {
   font-size: 20px;
   font-weight: 800;
+  margin: 0;
 }
 
 .booking-context p,
@@ -689,14 +698,15 @@ form select {
 
 .stick {
   background-color: var(--themeColor);
+  border: none;
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  width: 48px;
+  height: 48px;
   color: white;
   position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
   bottom: 10px;
-  right: 0;
+  right: 5px;
 }
