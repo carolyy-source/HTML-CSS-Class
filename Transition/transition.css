@@ -1,0 +1,26 @@
+section {
+  margin: 100px;
+  background-color: #fffcd5;
+}
+
+.box {
+  width: 300px;
+  height: 300px;
+  background-color: #faa;
+  font-size: 36px;
+  /* 轉場屬性
+  轉場延遲時間
+  轉場持續時間 */
+  transition-property: background-color, border-radius;
+  transition-delay: 1s, 0s;
+  transition-duration: 1s, 3s;
+  transition-timing-function: ease-in;
+}
+.box:hover {
+  background-color: rgb(217, 161, 255);
+  border-radius: 100%;
+  /* transform: scale(1.1); */
+  /* transition-property: background-color, border-radius;
+  transition-delay: 0s, 2s;
+  transition-duration: 2s, 3s; */
+}

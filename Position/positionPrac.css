@@ -1,5 +1,5 @@
 section {
-  margin: 20px auto;
+  margin: 100px auto;
   width: 960px;
   display: flex;
   flex-wrap: wrap;
@@ -8,7 +8,7 @@ section {
 }
 
 .item {
-  width: 225px;
+  width: calc(25% - 15px);
   margin: 0 auto;
   border: 1px solid grey;
   border-radius: 8px;
@@ -23,9 +23,8 @@ section {
 }
 
 .sale-tag {
-  padding: 0 8px;
   font-weight: 100;
-  background-color: rgb(17, 14, 218);
+  background-color: rgb(255, 0, 0);
   color: aliceblue;
   border-radius: 2px;
   position: absolute;
@@ -33,27 +32,58 @@ section {
   left: -10px;
 }
 
-.discount-tag::after {
+.sale-tag::before {
+  content: "";
+  /* width: 10px;
+  height: 10px;
+  background-color: rgb(172, 0, 0); */
+  color: aliceblue;
+  position: absolute;
+  /* bottom: -10px; */
+  top: 100%;
+  border-right: 10px solid rgb(194, 0, 0);
+  border-top: none;
+  border-left: none;
+  border-bottom: 10px solid transparent;
+}
+
+.img-wrap {
+  overflow: hidden;
+  position: relative;
+}
+
+.hot::after {
   content: "HOT ! ";
-  padding: 0 8px;
+  background-color: rgb(255, 253, 143);
+  padding: 2px 20px;
+  color: red;
+  position: absolute;
+  top: 10px;
+  right: -10px;
+  transform: rotate(45deg);
+}
+
+/*
+.hot::after {
+  content: "HOT ! ";
   font-weight: bold;
   background-color: rgb(255, 0, 0);
   color: white;
   position: absolute;
-  top: 11px; /* 🔥 讓緞帶貼到 item 上緣 */
-  right: -25px;
+  top: 5px; /* 🔥 讓緞帶貼到 item 上緣 
+  right: -21px;
   width: 80px;
   height: 26px;
-
   display: flex;
   align-items: center;
   justify-content: center;
-  /* 梯形形狀（上窄下寬） */
-  clip-path: polygon(28% 0%, 71.5% 0%, 99% 100%, 0% 100%);
+  /* 梯形形狀（上窄下寬） 
+  clip-path: polygon(32% 0%, 68% 0%, 100% 100%, 0% 100%);
 
-  /* 旋轉角度 */
+  /* 旋轉角度 
   transform: rotate(45deg);
 }
+*/
 
 .information {
   padding: 10px;
