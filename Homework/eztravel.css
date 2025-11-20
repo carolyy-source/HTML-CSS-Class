@@ -1,9 +1,11 @@
 section {
+  width: 90%;
   margin: 10px auto;
 }
 
 .topic {
   margin: 0 auto;
+  padding: 0 10px;
   font-size: 30px;
   position: relative;
 }
@@ -21,12 +23,22 @@ section {
 }
 
 .focus-img {
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(8, 1fr);
+  justify-content: center;
   gap: 10px;
+  overflow: hidden;
 }
 
+.focus-img img {
+  width: 100%;
+  height: 100%;
+  display: block; /* 移除圖片底部預設空白 */
+  border-radius: 8px;
+  object-fit: cover;
+}
 .img1 {
   background-color: #faa;
   grid-row: 1 / 9;
@@ -41,4 +53,47 @@ section {
   background-color: #faa;
   grid-column: 2 / 2;
   grid-row: 6 / 9;
+}
+.img4 {
+  background-color: rgb(104, 31, 31);
+  grid-column: 3 / 3;
+  grid-row: 1 / 4;
+}
+.img5 {
+  background-color: #faa;
+  grid-column: 3 / 3;
+  grid-row: 4 / 9;
+}
+
+.img6 {
+  background-color: #faa;
+  grid-column: 4 / 4;
+  grid-row: 1 / 3;
+}
+.img7 {
+  background-color: #faa;
+  grid-column: 4 / 4;
+  grid-row: 3 / 5;
+}
+.img8 {
+  background-color: #faa;
+  grid-column: 4 / 4;
+  grid-row: 5 / 7;
+}
+.img9 {
+  background-color: #faa;
+  grid-column: 4 / 4;
+  grid-row: 7 / 9;
+}
+
+.nation-topic::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  border-left: 10px solid #11d073;
+  border-top: 10px solid #11d073;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  z-index: -1;
 }
