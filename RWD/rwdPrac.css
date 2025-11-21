@@ -1,0 +1,75 @@
+section {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1200px;
+  height: 540px;
+  background-color: lightgray;
+}
+.top-wrap {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.top-merch {
+  flex: 1; /* 自動分攤 */
+  min-width: 0;
+  height: 180px;
+}
+
+.headphone {
+  background-color: blue;
+}
+
+.watch {
+  background-color: rgb(68, 201, 172);
+}
+.camera {
+  background-color: red;
+}
+
+.bottom-wrap {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.bottom-merch {
+  flex: 1; /* 自動分攤 */
+  min-width: 0;
+  height: 340px;
+  background-color: rgba(255, 182, 194, 0.719);
+}
+
+/* 平板時的螢幕 */
+@media screen and (min-width: 768px) {
+  section {
+    max-width: 780px;
+  }
+  .top-wrap {
+    flex-wrap: wrap;
+  }
+  .top-merch:nth-of-type(n + 3) {
+    display: none;
+  }
+}
+
+/* 手機時的螢幕 */
+@media screen and (max-width: 767px) {
+  section {
+    max-width: 90%;
+  }
+
+  .top-merch:nth-of-type(n + 2) {
+    display: none;
+  }
+  .bottom-wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,0 +1,52 @@
+section {
+  margin: 40px;
+}
+
+.card {
+  width: 300px;
+  height: 500px;
+  background-color: rgb(156, 235, 255);
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin: 100px auto;
+  font-size: 0;
+}
+
+.box {
+  background-color: pink;
+  height: 200px;
+  font-size: 16px;
+
+  display: inline-block;
+  width: calc(50% - 10px);
+}
+.box1 {
+  margin-right: 20px;
+}
+
+.banner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.banner img {
+  width: 100%;
+  aspect-ratio: 12 /3;
+  object-fit: center;
+}
+
+/* 平板時的螢幕 */
+@media screen and (min-width: 768px) {
+  .card {
+    background-color: rgb(255, 166, 166);
+  }
+}
+
+/* 電腦時的螢幕 */
+@media screen and (min-width: 1024px) {
+  .card {
+    background-color: rgb(253, 255, 164);
+  }
+}

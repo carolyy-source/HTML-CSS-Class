@@ -1,0 +1,113 @@
+/* 調色參考https://paletton.com/#uid=14N0u0kllllaFw0g0qFqFg0w0aF */
+
+.headbar {
+  display: flex;
+  background-color: #eeaccd;
+  justify-content: space-between;
+}
+
+.head-menu {
+  flex: 0 0 auto; /* menu 固定在右邊 */
+  height: 60px;
+}
+
+.title {
+  display: none;
+}
+
+.logo img {
+  height: 60px;
+  object-fit: cover;
+  aspect-ratio: 4 /3;
+}
+
+.link {
+  flex: 1; /* 自動分攤 */
+  display: flex;
+  gap: 20px;
+  /* background-color: rgb(63, 63, 109); */
+  justify-content: center;
+  align-items: center;
+  line-height: 60px;
+}
+
+.intro {
+  height: 100%;
+  background-color: #d1689b;
+  color: white;
+  position: relative;
+  padding: 0 10px;
+}
+
+.list::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  left: -10px;
+  top: -10px;
+}
+
+.list {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 10px;
+  list-style: none;
+  /* margin: 10px auto; */
+  width: 150px;
+  display: none; /* 隱藏none */
+}
+
+.list::before {
+  content: "";
+  position: absolute;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-bottom: 10px solid #d80a6f;
+  top: -10px;
+  left: 0px;
+}
+
+.selector:hover,
+.selector2:hover {
+  background-color: #eeaccd;
+}
+
+.selector {
+  padding: 10px 20px;
+  background-color: #d20067;
+  border-collapse: collapse;
+  position: relative;
+}
+
+.hotel:hover .list {
+  display: block;
+}
+
+.airport:hover .list {
+  display: block;
+}
+.list-2 {
+  position: absolute;
+  background-color: #a70050;
+  top: 20px;
+  left: calc(100% - 20px);
+  list-style: none;
+  margin: 10px 20px;
+  width: 150px;
+  display: none; /* 隱藏none */
+}
+
+.selector:hover ul {
+  display: block;
+}
+
+/* 手機時的螢幕 */
+@media screen and (max-width: 767px) {
+  .title {
+    font-size: 60px;
+  }
+  .list {
+    color: white;
+  }
+}
