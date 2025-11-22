@@ -12,11 +12,14 @@ section {
   width: 960px;
   margin: 0 auto;
   font-size: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
 }
 
 .each-card {
   width: 300px;
-  margin: 10px;
   border: 1px solid #00000041;
   border-radius: 8px;
   display: inline-block;
@@ -38,11 +41,11 @@ section {
 }
 
 .class-text {
-  text-align: left;
+  text-align: center;
   margin: 10px 0;
 }
 
-card-tags {
+.card-tags {
   margin: 10px 0;
 }
 .class-price {

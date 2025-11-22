@@ -32,6 +32,9 @@ header {
 
 .link {
   background-color: pink;
+  display: flex; /* 文字垂直置中 */
+  align-items: center;
+
   /* 此段可以由 "父層display: flex"達成
   display: inline-block;
   height: 100%; */

@@ -34,10 +34,11 @@ section {
   padding: 16px 32px;
 }
 .container {
+  border: 1px solid lightgray;
+  border-radius: 2px;
   margin: 0 auto;
   /* background-color: grey; */
   padding: 16px 3px;
-  /* border: solid lightgray; */
   display: flex;
   flex-direction: column;
 }
