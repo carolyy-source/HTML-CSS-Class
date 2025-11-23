@@ -1,7 +1,7 @@
 section {
   width: 1100px;
   height: auto;
-  margin: 0 auto 80px auto;
+  margin: 10px auto 100px auto;
 }
 
 a {
@@ -33,10 +33,10 @@ a:hover {
   object-fit: cover;
   top: 0px;
   left: -10px;
-  border-left: 25px solid #fab617;
-  border-top: 25px solid #fab617;
-  border-right: 25px solid transparent;
-  border-bottom: 25px solid transparent;
+  border-left: 18px solid #fab617;
+  border-top: 18px solid #fab617;
+  border-right: 18px solid transparent;
+  border-bottom: 18px solid transparent;
   z-index: -1;
 }
 
@@ -48,7 +48,6 @@ a:hover {
   grid-template-rows: repeat(8, 1fr);
   justify-content: center;
   gap: 15px;
-  overflow: hidden;
 }
 
 .focus-img img {
@@ -65,8 +64,13 @@ a:hover {
   overflow: hidden;
   background-color: #fafafa;
 }
-.mixed:hover {
+.mixed:hover,
+.nav-district:hover {
   color: #0c9251;
+}
+
+.mixed:hover {
+  box-shadow: 3px 3px 0 rgba(34, 34, 34, 0.15);
 }
 
 .word {
@@ -85,7 +89,8 @@ a:hover {
 .img2,
 .img3,
 .img4,
-.img5 {
+.img5,
+.japan-img {
   position: relative;
 }
 
@@ -95,6 +100,7 @@ a:hover {
 .img4::after,
 .img5::after {
   content: "";
+  border-radius: 8px;
   position: absolute;
   inset: 0;
   background-image: linear-gradient(
@@ -103,9 +109,11 @@ a:hover {
     rgba(34, 34, 34, 0.6) 90%
   );
 }
-
-.img1::before {
-  content: "357狂歡日 超狂折扣領▸";
+.img1::before,
+.img2::before,
+.img3::before,
+.img4::before,
+.img5::before {
   color: white;
   position: absolute;
   font-size: 18px;
@@ -114,54 +122,25 @@ a:hover {
   left: 0;
   padding: 10px;
   z-index: 2;
+}
+.img1::before {
+  content: "357狂歡日 超狂折扣領▸";
 }
 
 .img2::before {
   content: "天冷泡湯去▸";
-  color: white;
-  position: absolute;
-  font-size: 18px;
-  font-weight: bold;
-  bottom: 0;
-  left: 0;
-  padding: 10px;
-  z-index: 2;
 }
 
 .img3::before {
   content: "新開幕飯店 搶鮮住▸";
-  color: white;
-  position: absolute;
-  font-size: 18px;
-  font-weight: bold;
-  bottom: 0;
-  left: 0;
-  padding: 10px;
-  z-index: 2;
 }
 
 .img4::before {
   content: "日韓賞楓最前線▸";
-  color: white;
-  position: absolute;
-  font-size: 18px;
-  font-weight: bold;
-  bottom: 0;
-  left: 0;
-  padding: 10px;
-  z-index: 2;
 }
 
 .img5::before {
   content: "土耳其跟團 $28,800起▸";
-  color: white;
-  position: absolute;
-  font-size: 18px;
-  font-weight: bold;
-  bottom: 0;
-  left: 0;
-  padding: 10px;
-  z-index: 2;
 }
 
 .img1 {
@@ -169,41 +148,42 @@ a:hover {
 }
 
 .img2 {
-  grid-column: 2 / 2;
+  grid-column: 2;
   grid-row: 1 / 6;
 }
 .img3 {
-  grid-column: 2 / 2;
+  grid-column: 2;
   grid-row: 6 / 9;
 }
 .img4 {
-  grid-column: 3 / 3;
+  grid-column: 3;
   grid-row: 1 / 4;
 }
 .img5 {
-  grid-column: 3 / 3;
+  grid-column: 3;
   grid-row: 4 / 9;
 }
 
 .img6 {
-  grid-column: 4 / 4;
+  grid-column: 4;
   grid-row: 1 / 3;
 }
 .img7 {
-  grid-column: 4 / 4;
+  grid-column: 4;
   grid-row: 3 / 5;
 }
 .img8 {
-  grid-column: 4 / 4;
+  grid-column: 4;
   grid-row: 5 / 7;
 }
 .img9 {
-  grid-column: 4 / 4;
+  grid-column: 4;
   grid-row: 7 / 9;
 }
 
 .nation-topic {
   position: relative;
+  width: 260px;
 }
 
 .nation-topic::before {
@@ -225,14 +205,28 @@ a:hover {
 
 .nav-bar {
   font-size: 18px;
-  padding: 0 5px;
-  gap: 20px;
+  padding: 5px 5px 0 5px;
+  /* gap: 20px; */
   display: flex;
-  background-color: orange;
+  justify-content: end;
 }
 .nav-district {
   font-size: 18px;
+  margin: 0 11px;
+  padding: 0 5px;
+  background-color: orange;
+  height: 100%;
+  position: relative;
 }
+/* 
+.nav-district:active::before {
+  content: "";
+  position: absolute;
+  font-weight: 700;
+  color: #0c9251;
+  border-top: 1px solid #0c9251;
+  top: 100%;
+} */
 
 .japan {
   display: grid;
