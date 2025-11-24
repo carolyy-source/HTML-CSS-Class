@@ -253,8 +253,57 @@ button:hover {
   display: block; /* 移除圖片底部預設空白 */
   border-radius: 8px;
   object-fit: cover;
+  position: relative;
 }
 
+.japan-img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    180deg,
+    rgba(34, 34, 34, 0) 45%,
+    rgba(34, 34, 34, 0.6) 90%
+  );
+  border-radius: 8px;
+}
+
+.sale {
+  font-size: 20px;
+  padding: 10px;
+  width: 95%;
+  position: absolute;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  bottom: 0;
+  z-index: 2;
+  margin: 0;
+  line-height: 2; /* 或調整到合適高度 */
+}
+
+.sale-detail {
+  margin: 5px;
+  display: flex;
+  font-size: 16px;
+  font-weight: 600;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  line-height: 1.2; /* 或調整到合適高度 */
+}
+
+.sale-price {
+  font-size: 14px;
+  font-weight: 0;
+}
+.sale span {
+  color: #fab617;
+  font-size: 18px;
+}
 .japan-img1 {
   grid-row: 1 / 3;
 }
