@@ -9,7 +9,8 @@ a {
   color: black;
   font-size: bold;
 }
-a:hover {
+a:hover,
+button:hover {
   cursor: pointer;
 }
 
@@ -201,39 +202,49 @@ a:hover {
 .nav {
   display: flex;
   gap: 20px;
+  align-items: flex-start;
 }
 
 .nav-bar {
   font-size: 18px;
-  padding: 5px 5px 0 5px;
+  padding: 0 5px;
   /* gap: 20px; */
   display: flex;
-  justify-content: end;
+  justify-content: flex-end; /* 靠右 */
+  align-items: flex-start; /* 跟 .topic 上方對齊 */
 }
 .nav-district {
+  border: none; /* 移除邊框 */
+  outline: none; /* 移除藍色外框 */
+  background: none; /* 移除背景 */
   font-size: 18px;
   margin: 0 11px;
   padding: 0 5px;
-  background-color: orange;
-  height: 100%;
+  height: auto;
   position: relative;
 }
-/* 
-.nav-district:active::before {
+
+.tab.active::before {
   content: "";
   position: absolute;
   font-weight: 700;
   color: #0c9251;
-  border-top: 1px solid #0c9251;
-  top: 100%;
-} */
+  border-top: 3px solid #62e1a4;
+  width: 100%; /* 🔥 寬度佔滿整個 button */
+  top: calc(100% + 5px);
+  left: 0;
+}
 
 .japan {
+  display: none;
+}
+
+.japan.show {
   display: grid;
   grid-template-columns: 540px 260px 260px;
   grid-template-rows: repeat(2, 1fr);
   gap: 20px;
-  height: 395px;
+  /* height: 395px; */
 }
 
 .japan img {

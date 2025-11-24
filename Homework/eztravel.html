@@ -6,6 +6,7 @@
     <title>eztravel</title>
     <link rel="stylesheet" href="../reset.css" />
     <link rel="stylesheet" href="eztravel.css" />
+    <script src="eztravel.js" defer></script>
   </head>
   <!-- 使用grid:焦點話題.日本跟團.寶島必玩，
    周三上課前繳交 -->
@@ -80,40 +81,26 @@
     <section>
       <div class="nav">
         <div class="topic nation-topic">日本跟團</div>
-        <ul class="nav-bar">
-          <li>
-            <a class="nav-district">精選推薦</a>
-          </li>
-          <li>
-            <a class="nav-district">北陸</a>
-          </li>
-          <li>
-            <a class="nav-district">北海道</a>
-          </li>
-          <li>
-            <a class="nav-district">東北</a>
-          </li>
-          <li>
-            <a class="nav-district">東京</a>
-          </li>
-          <li>
-            <a class="nav-district">關西</a>
-          </li>
-          <li>
-            <a class="nav-district">九州</a>
-          </li>
-          <li>
-            <a class="nav-district">四國</a>
-          </li>
-          <li>
-            <a class="nav-district">沖繩</a>
-          </li>
-          <li>
-            <a class="nav-district">高雄出發</a>
-          </li>
-        </ul>
+        <div class="nav-bar">
+          <button class="nav-district tab active" data-target="section1">
+            精選推薦
+          </button>
+          <button class="nav-district tab" data-target="section2">北陸</button>
+          <button class="nav-district tab" data-target="section3">
+            北海道
+          </button>
+          <button class="nav-district tab" data-target="section4">東北</button>
+          <button class="nav-district tab" data-target="section5">東京</button>
+          <button class="nav-district tab" data-target="section6">關西</button>
+          <button class="nav-district tab" data-target="section7">九州</button>
+          <button class="nav-district tab" data-target="section8">四國</button>
+          <button class="nav-district tab" data-target="section9">沖繩</button>
+          <button class="nav-district tab" data-target="section10">
+            高雄出發
+          </button>
+        </div>
       </div>
-      <div class="japan">
+      <div class="japan show" id="section1">
         <a href="#" class="japan-img japan-img1">
           <img
             src="https://image.cdn-eztravel.com.tw/7RgK8jpUn8XNTc-zxYTS25sIN4RbM9-HISfjD8fpxmM/rs:fit:1000:600:1/g:ce/q:95/aHR0cHM6Ly92YWNhdGlvbi5jZG4tZXp0cmF2ZWwuY29tLnR3L2ltZy9WRFIvbmV3eWVhcmV2ZV83Njh4NDAwLmpwZw.jpg"
@@ -145,6 +132,51 @@
           />
         </a>
       </div>
+      <div class="japan" id="section2">
+        <a href="#" class="japan-img japan-img1">
+          <!-- <img
+            src="https://image.cdn-eztravel.com.tw/7RgK8jpUn8XNTc-zxYTS25sIN4RbM9-HISfjD8fpxmM/rs:fit:1000:600:1/g:ce/q:95/aHR0cHM6Ly92YWNhdGlvbi5jZG4tZXp0cmF2ZWwuY29tLnR3L2ltZy9WRFIvbmV3eWVhcmV2ZV83Njh4NDAwLmpwZw.jpg"
+            alt=""
+          /> -->
+          <img
+            src="https://image.cdn-eztravel.com.tw/BRs8xyrNExyKnYt4FZs5rwnyiiPR2v-209TkTdTcpRM/rs:fit:1000:600:1/g:ce/q:95/aHR0cHM6Ly92YWNhdGlvbi5jZG4tZXp0cmF2ZWwuY29tLnR3L2ltZy9WRFIvSlBfMjM3OTM1ODA2LmpwZw.jpg"
+            alt=""
+          />
+        </a>
+        <a href="#" class="japan-img japan-img2"
+          ><img
+            src="https://image.cdn-eztravel.com.tw/BRs8xyrNExyKnYt4FZs5rwnyiiPR2v-209TkTdTcpRM/rs:fit:1000:600:1/g:ce/q:95/aHR0cHM6Ly92YWNhdGlvbi5jZG4tZXp0cmF2ZWwuY29tLnR3L2ltZy9WRFIvSlBfMjM3OTM1ODA2LmpwZw.jpg"
+            alt=""
+          />
+        </a>
+        <a href="#" class="japan-img japan-img3"
+          ><img
+            src="https://image.cdn-eztravel.com.tw/GYKsrdZrCUD2aUvFhFOTLpvx34jsjZaFkvbA6hcfGXM/rs:fit:1000:600:1/g:ce/q:95/aHR0cHM6Ly92YWNhdGlvbi5jZG4tZXp0cmF2ZWwuY29tLnR3L2ltZy9WRFIvQVVfNTg5NjI2NTkzLmpwZw.jpg"
+            alt=""
+          />
+        </a>
+        <a href="#" class="japan-img japan-img4"
+          ><img
+            src="https://image.cdn-eztravel.com.tw/XTM8AZ2NBps9t0CmskaEqdAf3i3FN1zniJ3c3fJQ3S0/rs:fit:1000:600:1/g:ce/q:95/aHR0cHM6Ly92YWNhdGlvbi5jZG4tZXp0cmF2ZWwuY29tLnR3L2ltZy9WRFIvQ05ZXzE4Mzc3MDQxMTguanBn.jpg"
+            alt=""
+          />
+        </a>
+        <a href="#" class="japan-img japan-img5"
+          ><img
+            src="https://image.cdn-eztravel.com.tw/wpUTtrcapSWmgO2FUuoCvb7M368Jh-NYqxtSd1geTtc/rs:fit:1000:600:1/g:ce/q:95/aHR0cHM6Ly92YWNhdGlvbi5jZG4tZXp0cmF2ZWwuY29tLnR3L2ltZy9GUk4vMDAwMC5qcGc.jpg"
+            alt=""
+          />
+        </a>
+      </div>
+      <div class="japan" id="section3">1</div>
+      <div class="japan" id="section4">2</div>
+      <div class="japan" id="section5">3</div>
+      <div class="japan" id="section6">4</div>
+      <div class="japan" id="section7">5</div>
+      <div class="japan" id="section8">6</div>
+      <div class="japan" id="section9">7</div>
+      <div class="japan" id="section10">8</div>
+      <div class="japan" id="section11">9</div>
     </section>
     <section>
       <div class="topic nation-topic">寶島必玩</div>
