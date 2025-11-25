@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>eztravel</title>
+    <title>ezTravel</title>
     <link rel="stylesheet" href="../reset.css" />
     <link rel="stylesheet" href="eztravel.css" />
     <script src="eztravel.js" defer></script>
@@ -12,6 +12,7 @@
    周三上課前繳交 -->
   <!-- https://www.eztravel.com.tw/ -->
   <body>
+    <!-- 焦點話題 -->
     <section>
       <div class="topic-container">
         <div class="topic focus-topic">焦點話題</div>
@@ -78,6 +79,7 @@
         </div>
       </div>
     </section>
+    <!-- 日本跟團 -->
     <section>
       <div class="nav">
         <div class="topic nation-topic">日本跟團</div>
@@ -106,7 +108,7 @@
             <p>聖誕跨年狂歡優惠！</p>
             <div class="sale-detail">
               <p>輕鬆跟團精彩不停歇！</p>
-              <p><span>16,999</span> 起</p>
+              <p class="sale-price"><span>16,999</span>起</p>
             </div>
           </div>
           <img
@@ -119,7 +121,7 @@
             <p>晚鳥清倉 獨家優惠</p>
             <div class="sale-detail">
               <p>買到賺到!最高減五千</p>
-              <p class="sale-price"><span>19,700</span> 起</p>
+              <p class="sale-price"><span>19,700</span>起</p>
             </div>
           </div>
           <img
@@ -132,7 +134,7 @@
             <p>已成團專區</p>
             <div class="sale-detail">
               <p>出國跟團不必等✈</p>
-              <p class="sale-price"><span>13,888</span> 起</p>
+              <p class="sale-price"><span>13,888</span>起</p>
             </div>
           </div>
           <img
@@ -141,13 +143,27 @@
           />
         </a>
         <a href="#" class="japan-img japan-img4"
-          ><img
+          ><div class="sale">
+            <p>金馬迎新春!早買省越多</p>
+            <div class="sale-detail">
+              <p>春節最高省6000元</p>
+              <p class="sale-price"><span>32,700</span>起</p>
+            </div>
+          </div>
+          <img
             src="https://image.cdn-eztravel.com.tw/XTM8AZ2NBps9t0CmskaEqdAf3i3FN1zniJ3c3fJQ3S0/rs:fit:1000:600:1/g:ce/q:95/aHR0cHM6Ly92YWNhdGlvbi5jZG4tZXp0cmF2ZWwuY29tLnR3L2ltZy9WRFIvQ05ZXzE4Mzc3MDQxMTguanBn.jpg"
             alt=""
           />
         </a>
         <a href="#" class="japan-img japan-img5"
-          ><img
+          ><div class="sale">
+            <p>易遊嚴選</p>
+            <div class="sale-detail">
+              <p>寒假新春!早鳥優惠</p>
+              <p class="sale-price"><span>13,900</span>起</p>
+            </div>
+          </div>
+          <img
             src="https://image.cdn-eztravel.com.tw/wpUTtrcapSWmgO2FUuoCvb7M368Jh-NYqxtSd1geTtc/rs:fit:1000:600:1/g:ce/q:95/aHR0cHM6Ly92YWNhdGlvbi5jZG4tZXp0cmF2ZWwuY29tLnR3L2ltZy9GUk4vMDAwMC5qcGc.jpg"
             alt=""
           />
@@ -155,53 +171,715 @@
       </div>
       <div class="japan" id="section2">
         <a href="#" class="japan-img japan-img1">
-          <!-- <img
-            src="https://image.cdn-eztravel.com.tw/7RgK8jpUn8XNTc-zxYTS25sIN4RbM9-HISfjD8fpxmM/rs:fit:1000:600:1/g:ce/q:95/aHR0cHM6Ly92YWNhdGlvbi5jZG4tZXp0cmF2ZWwuY29tLnR3L2ltZy9WRFIvbmV3eWVhcmV2ZV83Njh4NDAwLmpwZw.jpg"
-            alt=""
-          /> -->
+          <div class="sale">
+            <p>北陸～江戶時代與現代建築並存</p>
+            <div class="sale-detail">
+              <p>金澤城、上高地、立山黑部</p>
+              <p class="sale-price"><span>16,900</span>起</p>
+            </div>
+          </div>
           <img
-            src="https://image.cdn-eztravel.com.tw/BRs8xyrNExyKnYt4FZs5rwnyiiPR2v-209TkTdTcpRM/rs:fit:1000:600:1/g:ce/q:95/aHR0cHM6Ly92YWNhdGlvbi5jZG4tZXp0cmF2ZWwuY29tLnR3L2ltZy9WRFIvSlBfMjM3OTM1ODA2LmpwZw.jpg"
+            src="https://image.cdn-eztravel.com.tw/6t4HTVcBTBW7RRLUfBhP2kWBzRCy-cb_C901F-ngYJ4/rs:fit:1000:600:1/g:ce/q:95/aHR0cHM6Ly92YWNhdGlvbi5jZG4tZXp0cmF2ZWwuY29tLnR3L2ltZy9WRFIvSlBfMTA0MzgzMDg1NS5qcGc.jpg"
             alt=""
           />
         </a>
         <a href="#" class="japan-img japan-img2"
-          ><img
-            src="https://image.cdn-eztravel.com.tw/BRs8xyrNExyKnYt4FZs5rwnyiiPR2v-209TkTdTcpRM/rs:fit:1000:600:1/g:ce/q:95/aHR0cHM6Ly92YWNhdGlvbi5jZG4tZXp0cmF2ZWwuY29tLnR3L2ltZy9WRFIvSlBfMjM3OTM1ODA2LmpwZw.jpg"
+          ><div class="sale">
+            <p>白雪封存的童話村落</p>
+            <div class="sale-detail">
+              <p>跟團走進雪白合掌村</p>
+              <p class="sale-price"><span>27,700</span>起</p>
+            </div>
+          </div>
+          <img
+            src="https://image.cdn-eztravel.com.tw/LwXu2fZ3vCSK3Jeotu_H4htKqsG2rbcPU6nidbzncSY/rs:fit:1000:600:1/g:ce/q:95/aHR0cHM6Ly92YWNhdGlvbi5jZG4tZXp0cmF2ZWwuY29tLnR3L2ltZy9WRFIvSlBfMTc5NDYzNDIyLmpwZw.jpg"
             alt=""
           />
         </a>
         <a href="#" class="japan-img japan-img3"
-          ><img
-            src="https://image.cdn-eztravel.com.tw/GYKsrdZrCUD2aUvFhFOTLpvx34jsjZaFkvbA6hcfGXM/rs:fit:1000:600:1/g:ce/q:95/aHR0cHM6Ly92YWNhdGlvbi5jZG4tZXp0cmF2ZWwuY29tLnR3L2ltZy9WRFIvQVVfNTg5NjI2NTkzLmpwZw.jpg"
+          ><div class="sale">
+            <p>年終超值北陸團</p>
+            <div class="sale-detail">
+              <p>⭐年終犒賞價</p>
+              <p class="sale-price"><span>28,500</span>起</p>
+            </div>
+          </div>
+          <img
+            src="https://image.cdn-eztravel.com.tw/JWqVkaSe5PhwpMMCOxxnoRmFlwBYRioDK1ALoAm8wMk/rs:fit:1000:600:1/g:ce/q:95/aHR0cHM6Ly92YWNhdGlvbi5jZG4tZXp0cmF2ZWwuY29tLnR3L2ltZy9WRFIvSlBfNzg2MDc1MDk3LmpwZw.jpg"
             alt=""
           />
         </a>
         <a href="#" class="japan-img japan-img4"
-          ><img
-            src="https://image.cdn-eztravel.com.tw/XTM8AZ2NBps9t0CmskaEqdAf3i3FN1zniJ3c3fJQ3S0/rs:fit:1000:600:1/g:ce/q:95/aHR0cHM6Ly92YWNhdGlvbi5jZG4tZXp0cmF2ZWwuY29tLnR3L2ltZy9WRFIvQ05ZXzE4Mzc3MDQxMTguanBn.jpg"
+          ><div class="sale">
+            <p>名花之里彩燈祭</p>
+            <div class="sale-detail">
+              <p>最大規模花卉燈節</p>
+              <p class="sale-price"><span>19,700</span>起</p>
+            </div>
+          </div>
+          <img
+            src="https://image.cdn-eztravel.com.tw/DB8augtN9wFjtBDhuRoNCPDa1IW6jt-_xdgU5gq9ldE/rs:fit:1000:600:1/g:ce/q:95/aHR0cHM6Ly92YWNhdGlvbi5jZG4tZXp0cmF2ZWwuY29tLnR3L2ltZy9WRFIvSlBfMTIxMzYwMDAwMC5qcGc.jpg"
             alt=""
           />
         </a>
         <a href="#" class="japan-img japan-img5"
-          ><img
-            src="https://image.cdn-eztravel.com.tw/wpUTtrcapSWmgO2FUuoCvb7M368Jh-NYqxtSd1geTtc/rs:fit:1000:600:1/g:ce/q:95/aHR0cHM6Ly92YWNhdGlvbi5jZG4tZXp0cmF2ZWwuY29tLnR3L2ltZy9GUk4vMDAwMC5qcGc.jpg"
+          ><div class="sale">
+            <p>聖誕跨年狂歡優惠！</p>
+            <div class="sale-detail">
+              <p>輕鬆跟團精彩不停歇！</p>
+              <p class="sale-price"><span>16,999</span>起</p>
+            </div>
+          </div>
+          <img
+            src="https://image.cdn-eztravel.com.tw/TA-ZC9ue6NMAkGis3379marNoS23ZEi8BtBnTV3iOXc/rs:fit:1000:600:1/g:ce/q:95/aHR0cHM6Ly92YWNhdGlvbi5jZG4tZXp0cmF2ZWwuY29tLnR3L2ltZy9GUk4vRlJOMDAwMDAxODkwOC5naWY.png"
             alt=""
           />
         </a>
       </div>
-      <div class="japan" id="section3">1</div>
-      <div class="japan" id="section4">2</div>
-      <div class="japan" id="section5">3</div>
-      <div class="japan" id="section6">4</div>
-      <div class="japan" id="section7">5</div>
-      <div class="japan" id="section8">6</div>
-      <div class="japan" id="section9">7</div>
-      <div class="japan" id="section10">8</div>
-      <div class="japan" id="section11">9</div>
+      <div class="japan" id="section3">
+        <a href="#" class="japan-img japan-img1">
+          <div class="sale">
+            <p>GO北海道～溫泉美食吃到飽.百萬夜景</p>
+            <div class="sale-detail">
+              <p>美瑛青池、小樽運河、定山溪、金森倉庫群</p>
+              <p class="sale-price"><span>23,699</span>起</p>
+            </div>
+          </div>
+          <img
+            src="https://image.cdn-eztravel.com.tw/5g2UCG3cF4Eo8jHVQkiGf4kvtrZRhtbblsqkWsymT_I/rs:fit:1000:600:1/g:ce/q:95/aHR0cHM6Ly92YWNhdGlvbi5jZG4tZXp0cmF2ZWwuY29tLnR3L2ltZy9WRFIvSlBfMjU0NDgwNDU1LmpwZw.jpg"
+            alt=""
+          />
+        </a>
+        <a href="#" class="japan-img japan-img2"
+          ><div class="sale">
+            <p>小樽運河夢幻遊船</p>
+            <div class="sale-detail">
+              <p>欣賞古色古香街景</p>
+              <p class="sale-price"><span>25,700</span>起</p>
+            </div>
+          </div>
+          <img
+            src="https://image.cdn-eztravel.com.tw/yVo_5VIHt7XDCFfI-euNM8Hnx8vV5tGbD9UPonHifh0/rs:fit:1000:600:1/g:ce/q:95/aHR0cHM6Ly92YWNhdGlvbi5jZG4tZXp0cmF2ZWwuY29tLnR3L2ltZy9WRFIvSlBfMTc2OTYyNjczLmpwZw.jpg"
+            alt=""
+          />
+        </a>
+        <a href="#" class="japan-img japan-img3"
+          ><div class="sale">
+            <p>溫泉美食三大螃蟹饗宴5天</p>
+            <div class="sale-detail">
+              <p>企鵝遊行.函館夜景</p>
+              <p class="sale-price"><span>24,688</span>起</p>
+            </div>
+          </div>
+          <img
+            src="https://image.cdn-eztravel.com.tw/rEC-jIJ8JZIez2DLJcOmSS3YZodCzTxvFU8Mmbz-rBM/rs:fit:1000:600:1/g:ce/q:95/aHR0cHM6Ly92YWNhdGlvbi5jZG4tZXp0cmF2ZWwuY29tLnR3L2ltZy9WRFIvSlBfNjM0NDk5MDg3LmpwZw.jpg"
+            alt=""
+          />
+        </a>
+        <a href="#" class="japan-img japan-img4"
+          ><div class="sale">
+            <p>北海道★星野度假村</p>
+            <div class="sale-detail">
+              <p>微笑海灘.秘境青池</p>
+              <p class="sale-price"><span>39,900</span>起</p>
+            </div>
+          </div>
+          <img
+            src="https://image.cdn-eztravel.com.tw/b7XEt7COTfe2ViipQtOle4W25QbhObcz27qHArdm1Aw/rs:fit:1000:600:1/g:ce/q:95/aHR0cHM6Ly92YWNhdGlvbi5jZG4tZXp0cmF2ZWwuY29tLnR3L2ltZy9WRFIvVE9NQU1VXzAyLmpwZw.jpg"
+            alt=""
+          />
+        </a>
+        <a href="#" class="japan-img japan-img5"
+          ><div class="sale">
+            <p>易遊~星宇戲雪趣</p>
+            <div class="sale-detail">
+              <p>獼猴泡湯.和牛+三大蟹</p>
+              <p class="sale-price"><span>46,900</span>起</p>
+            </div>
+          </div>
+          <img
+            src="https://image.cdn-eztravel.com.tw/YlZCsFMrVVGPXMtaKWKgSdU9PXw650Zof4XUZth6GYA/rs:fit:1000:600:1/g:ce/q:95/aHR0cHM6Ly92YWNhdGlvbi5jZG4tZXp0cmF2ZWwuY29tLnR3L2ltZy9GUk4vRlJOMDAwMDAyMDA4MS5naWY.png"
+            alt=""
+          />
+        </a>
+      </div>
+      <div class="japan" id="section4">
+        <a href="#" class="japan-img japan-img1">
+          <div class="sale">
+            <p>超值東北～秋田內陸鐵道．角館．嚴美溪</p>
+            <div class="sale-detail">
+              <p>奧入瀨溪、中尊寺、小坂町</p>
+              <p class="sale-price"><span>19,700</span>起</p>
+            </div>
+          </div>
+          <img
+            src="https://image.cdn-eztravel.com.tw/NxUZlpGywIdiGMYhnxATUGAx32dQTZFXSuI-zftpAxY/rs:fit:1000:600:1/g:ce/q:95/aHR0cHM6Ly92YWNhdGlvbi5jZG4tZXp0cmF2ZWwuY29tLnR3L2ltZy9WRFIvSlBfMTQ0MDk5MTEzMC5qcGc.jpg"
+            alt=""
+          />
+        </a>
+        <a href="#" class="japan-img japan-img2"
+          ><div class="sale">
+            <p>雪之怪物藏王樹冰</p>
+            <div class="sale-detail">
+              <p>日本冬季的極致之美</p>
+              <p class="sale-price"><span>24,888</span>起</p>
+            </div>
+          </div>
+          <img
+            src="https://image.cdn-eztravel.com.tw/Pa8Oq7tVgOi50V28g6yOU2HWvdF5roj3ezUQ-0MRWWo/rs:fit:1000:600:1/g:ce/q:95/aHR0cHM6Ly92YWNhdGlvbi5jZG4tZXp0cmF2ZWwuY29tLnR3L2ltZy9WRFIvSlBfNDc0MzU3NTU5LmpwZw.jpg"
+            alt=""
+          />
+        </a>
+        <a href="#" class="japan-img japan-img3"
+          ><div class="sale">
+            <p>東北名湯雙溫泉 4天</p>
+            <div class="sale-detail">
+              <p>復古溫泉夢時光</p>
+              <p class="sale-price"><span>22,900</span>起</p>
+            </div>
+          </div>
+          <img
+            src="https://image.cdn-eztravel.com.tw/iKXASEeJiaKstDzpzJYsXbfXBbmtSC-dSdaa7f15L7c/rs:fit:1000:600:1/g:ce/q:95/aHR0cHM6Ly92YWNhdGlvbi5jZG4tZXp0cmF2ZWwuY29tLnR3L2ltZy9WRFIvaG90c3ByaW5nXzIzOTQ5NTEzMzkuanBn.jpg"
+            alt=""
+          />
+        </a>
+        <a href="#" class="japan-img japan-img4"
+          ><div class="sale">
+            <p>留存百年．銀山溫泉</p>
+            <div class="sale-detail">
+              <p>走進日本大正時代</p>
+              <p class="sale-price"><span>19,700</span>起</p>
+            </div>
+          </div>
+          <img
+            src="https://image.cdn-eztravel.com.tw/9Acv7Xj7YwRlKoxmV1nG2nxAGTLaApGOzI1149LroG4/rs:fit:1000:600:1/g:ce/q:95/aHR0cHM6Ly92YWNhdGlvbi5jZG4tZXp0cmF2ZWwuY29tLnR3L2ltZy9WRFIvSlBfMTE1NjQyMzYyMS5qcGc.jpg"
+            alt=""
+          />
+        </a>
+        <a href="#" class="japan-img japan-img5"
+          ><div class="sale">
+            <p>易遊X星宇X三溫泉</p>
+            <div class="sale-detail">
+              <p>奧入瀨溪森林浴．銀山溫泉</p>
+              <p class="sale-price"><span>36,900</span>起</p>
+            </div>
+          </div>
+          <img
+            src="https://image.cdn-eztravel.com.tw/iWjRTm1E5ALByUmxk21kq-P-hynSwKn0GuMfAsNfg4k/rs:fit:1000:600:1/g:ce/q:95/aHR0cHM6Ly92YWNhdGlvbi5jZG4tZXp0cmF2ZWwuY29tLnR3L2ltZy9GUk4vRlJOMDAwMDAxODc1OC5naWY.png"
+            alt=""
+          />
+        </a>
+      </div>
+      <div class="japan" id="section5">
+        <a href="#" class="japan-img japan-img1">
+          <div class="sale">
+            <p>東京～富士山景觀纜車.麻布之丘.溫泉主題樂園</p>
+            <div class="sale-detail">
+              <p>豐洲海鮮市場、草津漫遊、日式燒肉吃到飽</p>
+              <p class="sale-price"><span>19,700</span>起</p>
+            </div>
+          </div>
+          <img
+            src="https://image.cdn-eztravel.com.tw/Dkp3izJtIVYEm7O-gX1YOw7z_9rxlyjW_-a1_CM5eUo/rs:fit:1000:600:1/g:ce/q:95/aHR0cHM6Ly92YWNhdGlvbi5jZG4tZXp0cmF2ZWwuY29tLnR3L2ltZy9WRFIvSlBfMTAxMjQzODgzMS5qcGc.jpg"
+            alt=""
+          />
+        </a>
+        <a href="#" class="japan-img japan-img2"
+          ><div class="sale">
+            <p>涉谷360°天空展望台</p>
+            <div class="sale-detail">
+              <p>日本必訪地標</p>
+              <p class="sale-price"><span>24,500</span>起</p>
+            </div>
+          </div>
+          <img
+            src="https://image.cdn-eztravel.com.tw/L_gtxxYhQL6iDn1UWP9gDNE5JsD1b_hm730Q-6z6Fgk/rs:fit:1000:600:1/g:ce/q:95/aHR0cHM6Ly92YWNhdGlvbi5jZG4tZXp0cmF2ZWwuY29tLnR3L2ltZy9WRFIvSlBfMjIwNTAyMzI4Ny5qcGc.jpg"
+            alt=""
+          />
+        </a>
+        <a href="#" class="japan-img japan-img3"
+          ><div class="sale">
+            <p>東京富士忍野八海6日</p>
+            <div class="sale-detail">
+              <p>富士山景纜車</p>
+              <p class="sale-price"><span>21,700</span>起</p>
+            </div>
+          </div>
+          <img
+            src="https://image.cdn-eztravel.com.tw/XnLzJ9AdGB8venGp5VCGOL6TE2N6GKjd3m_jzed-akI/rs:fit:1000:600:1/g:ce/q:95/aHR0cHM6Ly92YWNhdGlvbi5jZG4tZXp0cmF2ZWwuY29tLnR3L2ltZy9WRFIvSlBfMzM1NTc5MDg3LmpwZw.jpg"
+            alt=""
+          />
+        </a>
+        <a href="#" class="japan-img japan-img4"
+          ><div class="sale">
+            <p>瘋玩東京主題樂園</p>
+            <div class="sale-detail">
+              <p>夢想實現歡樂城</p>
+              <p class="sale-price"><span>19,700</span>起</p>
+            </div>
+          </div>
+          <img
+            src="https://image.cdn-eztravel.com.tw/mBGT7kRKMcz74yTSoDNlEVD_aLsAeDRbOs3qJaz8UPw/rs:fit:1000:600:1/g:ce/q:95/aHR0cHM6Ly92YWNhdGlvbi5jZG4tZXp0cmF2ZWwuY29tLnR3L2ltZy9WRFIvSlBfREw4LmpwZw.jpg"
+            alt=""
+          />
+        </a>
+        <a href="#" class="japan-img japan-img5"
+          ><div class="sale">
+            <p>易遊X星宇富士山</p>
+            <div class="sale-detail">
+              <p>富士動物園．戲雪</p>
+              <p class="sale-price"><span>34,900</span>起</p>
+            </div>
+          </div>
+          <img
+            src="https://image.cdn-eztravel.com.tw/mEol-pNsrSCtaQAZZUL63a6oA-bwtRalHJ2yvykeSKc/rs:fit:1000:600:1/g:ce/q:95/aHR0cHM6Ly92YWNhdGlvbi5jZG4tZXp0cmF2ZWwuY29tLnR3L2ltZy9GUk4vRlJOMDAwMDAxODgzNS5naWY.png"
+            alt=""
+          />
+        </a>
+      </div>
+      <div class="japan" id="section6">
+        <a href="#" class="japan-img japan-img1">
+          <div class="sale">
+            <p>關西四都～大阪、京都、神戶、奈良</p>
+            <div class="sale-detail">
+              <p>金閣寺、嵐山渡月橋、奈良鹿公園、和服體驗</p>
+              <p class="sale-price"><span>14,499</span>起</p>
+            </div>
+          </div>
+          <img
+            src="https://image.cdn-eztravel.com.tw/3ZEoi88WYYM81vVqvH7aBSqy8DCBA7gIJV6SBXlMTf4/rs:fit:1000:600:1/g:ce/q:95/aHR0cHM6Ly92YWNhdGlvbi5jZG4tZXp0cmF2ZWwuY29tLnR3L2ltZy9WRFIvSlBfMTkxNjE2OTc3LmpwZw.jpg"
+            alt=""
+          />
+        </a>
+        <a href="#" class="japan-img japan-img2"
+          ><div class="sale">
+            <p>🌏環球影城🌏</p>
+            <div class="sale-detail">
+              <p>電影世界大冒險</p>
+              <p class="sale-price"><span>14,499</span>起</p>
+            </div>
+          </div>
+          <img
+            src="https://image.cdn-eztravel.com.tw/BjB4kEk6NfdzojxYj8hEhXz_DzLBIbGvxmrlk-xP7d4/rs:fit:1000:600:1/g:ce/q:95/aHR0cHM6Ly92YWNhdGlvbi5jZG4tZXp0cmF2ZWwuY29tLnR3L2ltZy9WRFIvSlBfTklOVEVORE8uanBn.jpg"
+            alt=""
+          />
+        </a>
+        <a href="#" class="japan-img japan-img3"
+          ><div class="sale">
+            <p>桃太郎關西四都5日</p>
+            <div class="sale-detail">
+              <p>和服體驗.螃蟹美食</p>
+              <p class="sale-price"><span>25,700</span>起</p>
+            </div>
+          </div>
+          <img
+            src="https://image.cdn-eztravel.com.tw/1aD1cjbG4X25KFPlf1DsJCXUnFRWhnDrlh9ZOh5U3To/rs:fit:1000:600:1/g:ce/q:95/aHR0cHM6Ly92YWNhdGlvbi5jZG4tZXp0cmF2ZWwuY29tLnR3L2ltZy9WRFIvSlBfNDIwODY5NzcuanBn.jpg"
+            alt=""
+          />
+        </a>
+        <a href="#" class="japan-img japan-img4"
+          ><div class="sale">
+            <p>經典雙寺巡禮</p>
+            <div class="sale-detail">
+              <p>一日看盡京都風華</p>
+              <p class="sale-price"><span>19,700</span>起</p>
+            </div>
+          </div>
+          <img
+            src="https://image.cdn-eztravel.com.tw/b7KRygW4x_doltNIs1XvkyI9rJ9tOxfvJUY4_PZ1lls/rs:fit:1000:600:1/g:ce/q:95/aHR0cHM6Ly92YWNhdGlvbi5jZG4tZXp0cmF2ZWwuY29tLnR3L2ltZy9WRFIvSlBfMTA0NzEzODU5NS5qcGc.jpg"
+            alt=""
+          />
+        </a>
+        <a href="#" class="japan-img japan-img5"
+          ><div class="sale">
+            <p>易遊X星宇X雙樂園</p>
+            <div class="sale-detail">
+              <p>環球影城．樂高樂園</p>
+              <p class="sale-price"><span>27,900</span>起</p>
+            </div>
+          </div>
+          <img
+            src="https://image.cdn-eztravel.com.tw/OptFurl0Fcw3_22Q9PFkdBy4z1hR8kwiLtBxLUmI_P8/rs:fit:1000:600:1/g:ce/q:95/aHR0cHM6Ly92YWNhdGlvbi5jZG4tZXp0cmF2ZWwuY29tLnR3L2ltZy9GUk4vRlJOMDAwMDAxOTg1OC5naWY.png"
+            alt=""
+          />
+        </a>
+      </div>
+      <div class="japan" id="section7">
+        <a href="#" class="japan-img japan-img1">
+          <div class="sale">
+            <p>九州熊本～門司港懷舊區、柳川遊船、湯布院</p>
+            <div class="sale-detail">
+              <p>阿蘇溫泉、太宰府天滿宮、可愛萌熊電車</p>
+              <p class="sale-price"><span>10,899</span>起</p>
+            </div>
+          </div>
+          <img
+            src="https://image.cdn-eztravel.com.tw/gEToTNGfnbiyWtYPRkJ9j_4gvpsVAZz94-zVPscDaEM/rs:fit:1000:600:1/g:ce/q:95/aHR0cHM6Ly92YWNhdGlvbi5jZG4tZXp0cmF2ZWwuY29tLnR3L2ltZy9WRFIvSlBfMzYzODAzMDYwLmpwZw.jpg"
+            alt=""
+          />
+        </a>
+        <a href="#" class="japan-img japan-img2"
+          ><div class="sale">
+            <p>夢幻小歐洲豪斯登堡</p>
+            <div class="sale-detail">
+              <p>日本版荷蘭童話世界</p>
+              <p class="sale-price"><span>25,900</span>起</p>
+            </div>
+          </div>
+          <img
+            src="https://image.cdn-eztravel.com.tw/3bP9hYWRkPW98FC9J-d0AbQqDPGBhF5nkdlKawymil0/rs:fit:1000:600:1/g:ce/q:95/aHR0cHM6Ly92YWNhdGlvbi5jZG4tZXp0cmF2ZWwuY29tLnR3L2ltZy9WRFIvSlBfNTU5NzUyNTcxLmpwZw.jpg"
+            alt=""
+          />
+        </a>
+        <a href="#" class="japan-img japan-img3"
+          ><div class="sale">
+            <p>九州輕旅遊5日</p>
+            <div class="sale-detail">
+              <p>參拜3,000年神木</p>
+              <p class="sale-price"><span>21,700</span>起</p>
+            </div>
+          </div>
+          <img
+            src="https://image.cdn-eztravel.com.tw/mK8gzid-egfi_-CGAAg8YsYj8mMCUtMe8Rgad_DYqHQ/rs:fit:1000:600:1/g:ce/q:95/aHR0cHM6Ly92YWNhdGlvbi5jZG4tZXp0cmF2ZWwuY29tLnR3L2ltZy9WRFIvSlBfMjUwODkxODEwMy5qcGc.jpg"
+            alt=""
+          />
+        </a>
+        <a href="#" class="japan-img japan-img4"
+          ><div class="sale">
+            <p>著名小鎮湯布院♨️</p>
+            <div class="sale-detail">
+              <p>靜謐山間溫泉鄉</p>
+              <p class="sale-price"><span>10,999</span>起</p>
+            </div>
+          </div>
+          <img
+            src="https://image.cdn-eztravel.com.tw/1b5SypE8y4FRyXdlEuoZ4YIjSZqt0VALZ6pezIwS15A/rs:fit:1000:600:1/g:ce/q:95/aHR0cHM6Ly92YWNhdGlvbi5jZG4tZXp0cmF2ZWwuY29tLnR3L2ltZy9WRFIvSlBfNjM0NjA3OTk2LmpwZw.jpg"
+            alt=""
+          />
+        </a>
+        <a href="#" class="japan-img japan-img5"
+          ><div class="sale">
+            <p>易遊x星宇x雙溫泉</p>
+            <div class="sale-detail">
+              <p>動物園+叢林巴士+水族館</p>
+              <p class="sale-price"><span>27,900</span>起</p>
+            </div>
+          </div>
+          <img
+            src="https://image.cdn-eztravel.com.tw/-3EvgEfEvzngcFUbi2WNJNGHUfOuE3QoViURUJxiFtM/rs:fit:1000:600:1/g:ce/q:95/aHR0cHM6Ly92YWNhdGlvbi5jZG4tZXp0cmF2ZWwuY29tLnR3L2ltZy9GUk4vRlJOMDAwMDAxOTIyNC5naWY.png"
+            alt=""
+          />
+        </a>
+      </div>
+      <div class="japan" id="section8">
+        <a href="#" class="japan-img japan-img1">
+          <div class="sale">
+            <p>四國大募集～古城溫泉與海岸風光</p>
+            <div class="sale-detail">
+              <p>紫雲出山、曼妙阿波舞、姬路城、倉敷美觀</p>
+              <p class="sale-price"><span>17,900</span>起</p>
+            </div>
+          </div>
+          <img
+            src="https://image.cdn-eztravel.com.tw/dlFPHnpitL2k6DGRhu6ppt0IYD4i-HR1xPEMXLnFq0M/rs:fit:1000:600:1/g:ce/q:95/aHR0cHM6Ly92YWNhdGlvbi5jZG4tZXp0cmF2ZWwuY29tLnR3L2ltZy9WRFIvSlBfMTQ1MTU4MjU3My5qcGc.jpg"
+            alt=""
+          />
+        </a>
+        <a href="#" class="japan-img japan-img2"
+          ><div class="sale">
+            <p>幸福傳說小豆島</p>
+            <div class="sale-detail">
+              <p>海島藝文慢旅</p>
+              <p class="sale-price"><span>21,900</span>起</p>
+            </div>
+          </div>
+          <img
+            src="https://image.cdn-eztravel.com.tw/24U3e5SVT3f2IGUyhT1cPXO-KR6g5pEr5VNgxBFNGdI/rs:fit:1000:600:1/g:ce/q:95/aHR0cHM6Ly92YWNhdGlvbi5jZG4tZXp0cmF2ZWwuY29tLnR3L2ltZy9WRFIvSlBfMjM0MTE2MzE3LmpwZw.jpg"
+            alt=""
+          />
+        </a>
+        <a href="#" class="japan-img japan-img3"
+          ><div class="sale">
+            <p>冬遊四國-名湯饗宴4天</p>
+            <div class="sale-detail">
+              <p>金刀比羅宮</p>
+              <p class="sale-price"><span>21,900</span>起</p>
+            </div>
+          </div>
+          <img
+            src="https://image.cdn-eztravel.com.tw/jf37EDhQWHp--XB8iGrVNJqzXKJ4v52rMKsfgOp-ofk/rs:fit:1000:600:1/g:ce/q:95/aHR0cHM6Ly92YWNhdGlvbi5jZG4tZXp0cmF2ZWwuY29tLnR3L2ltZy9WRFIvSlBfODg0NzIyOTkuanBn.jpg"
+            alt=""
+          />
+        </a>
+        <a href="#" class="japan-img japan-img4"
+          ><div class="sale">
+            <p>大步危峽谷遊覽船</p>
+            <div class="sale-detail">
+              <p>水上穿越自然奇觀</p>
+              <p class="sale-price"><span>17,900</span>起</p>
+            </div>
+          </div>
+          <img
+            src="https://image.cdn-eztravel.com.tw/pAWv1d1bJel6X84VZMtBhlMQ5ZLxbUEDCT1BkIQ17rE/rs:fit:1000:600:1/g:ce/q:95/aHR0cHM6Ly92YWNhdGlvbi5jZG4tZXp0cmF2ZWwuY29tLnR3L2ltZy9WRFIvSlBfNjgxNzQ0MjYyLmpwZw.jpg"
+            alt=""
+          />
+        </a>
+        <a href="#" class="japan-img japan-img5"
+          ><div class="sale">
+            <p>結緣山陰山陽5日</p>
+            <div class="sale-detail">
+              <p>玉造溫泉.鳥取沙丘</p>
+              <p class="sale-price"><span>29,700</span>起</p>
+            </div>
+          </div>
+          <img
+            src="https://image.cdn-eztravel.com.tw/eFv5UF0f0eVNd1Ra5681D7rKghdameiv5-yoPHPy7AQ/rs:fit:1000:600:1/g:ce/q:95/aHR0cHM6Ly92YWNhdGlvbi5jZG4tZXp0cmF2ZWwuY29tLnR3L2ltZy9WRFIvSlBfMTEyNDE4NTUyMy5qcGc.jpg"
+            alt=""
+          />
+        </a>
+      </div>
+      <div class="japan" id="section9">
+        <a href="#" class="japan-img japan-img1">
+          <div class="sale">
+            <p>悠遊沖繩～慢旅之島</p>
+            <div class="sale-detail">
+              <p>名護、古宇利島、沖繩美麗海水族館</p>
+              <p class="sale-price"><span>10,788</span>起</p>
+            </div>
+          </div>
+          <img
+            src="https://image.cdn-eztravel.com.tw/eUJiG1i7nnbsV8A9U3bFG0-UoKLs4mBQKXD_S4H0iVw/rs:fit:1000:600:1/g:ce/q:95/aHR0cHM6Ly92YWNhdGlvbi5jZG4tZXp0cmF2ZWwuY29tLnR3L2ltZy9WRFIvSlBfMTAwODAyMjYyNC5qcGc.jpg"
+            alt=""
+          />
+        </a>
+        <a href="#" class="japan-img japan-img2"
+          ><div class="sale">
+            <p>🐬海洋博公園</p>
+            <div class="sale-detail">
+              <p>精彩水上海豚秀</p>
+              <p class="sale-price"><span>10,788</span>起</p>
+            </div>
+          </div>
+          <img
+            src="https://image.cdn-eztravel.com.tw/QmnGpC0HUvmM1fW1xQZWjNRRj69gDn_dXyDAN-Fg3a8/rs:fit:1000:600:1/g:ce/q:95/aHR0cHM6Ly92YWNhdGlvbi5jZG4tZXp0cmF2ZWwuY29tLnR3L2ltZy9WRFIvSlBfMjkzOTgwODE3LmpwZw.jpg"
+            alt=""
+          />
+        </a>
+        <a href="#" class="japan-img japan-img3"
+          ><div class="sale">
+            <p>微醺沖繩4日.半潛水艇</p>
+            <div class="sale-detail">
+              <p>蒸氣海鮮.燒肉吃到飽</p>
+              <p class="sale-price"><span>24,700</span>起</p>
+            </div>
+          </div>
+          <img
+            src="https://image.cdn-eztravel.com.tw/2j0qDIwHv4iCBeGuvhG62ykq6CnOCsp-A7bLpI0kk8Y/rs:fit:1000:600:1/g:ce/q:95/aHR0cHM6Ly92YWNhdGlvbi5jZG4tZXp0cmF2ZWwuY29tLnR3L2ltZy9WRFIvSlBfMzAwMjIyOTg2LmpwZw.jpg"
+            alt=""
+          />
+        </a>
+        <a href="#" class="japan-img japan-img4"
+          ><div class="sale">
+            <p>玻璃底船🛶體驗</p>
+            <div class="sale-detail">
+              <p>不下水也能欣賞海底</p>
+              <p class="sale-price"><span>21,300</span>起</p>
+            </div>
+          </div>
+          <img
+            src="https://image.cdn-eztravel.com.tw/3m4SN8a00LQEiB2t3dN8Dvqsq3KyrrTcnZsfq3HL_So/rs:fit:1000:600:1/g:ce/q:95/aHR0cHM6Ly92YWNhdGlvbi5jZG4tZXp0cmF2ZWwuY29tLnR3L2ltZy9WRFIvSlBfNDkyNzI0NzA4LmpwZw.jpg"
+            alt=""
+          />
+        </a>
+        <a href="#" class="japan-img japan-img5"
+          ><div class="sale">
+            <p>悠閒沖繩4日-星野海景咖啡</p>
+            <div class="sale-detail">
+              <p>系滿魚市場.波上宮</p>
+              <p class="sale-price"><span>22,600</span>起</p>
+            </div>
+          </div>
+          <img
+            src="https://image.cdn-eztravel.com.tw/QGvrTV3da502aGbeRHaIQGFF9pz1qaXXwzTvquVuWTw/rs:fit:1000:600:1/g:ce/q:95/aHR0cHM6Ly92YWNhdGlvbi5jZG4tZXp0cmF2ZWwuY29tLnR3L2ltZy9WRFIvSlBfMTQyNjkyNjMzMi5qcGc.jpg"
+            alt=""
+          />
+        </a>
+      </div>
+      <div class="japan" id="section10">
+        <a href="#" class="japan-img japan-img1">
+          <div class="sale">
+            <p>九州．福岡．熊本．宮崎．鹿兒島．佐賀</p>
+            <div class="sale-detail">
+              <p>熊本城、高千穗峽谷、門司港散策</p>
+              <p class="sale-price"><span>19,900</span>起</p>
+            </div>
+          </div>
+          <img
+            src="https://image.cdn-eztravel.com.tw/8H5hzhdSyE8Gah7-DGKSWFvYPnURKMjos7dkQB2a7jI/rs:fit:1000:600:1/g:ce/q:95/aHR0cHM6Ly92YWNhdGlvbi5jZG4tZXp0cmF2ZWwuY29tLnR3L2ltZy9WRFIvSlBfNjY2MDk1MTU4LmpwZw.jpg"
+            alt=""
+          />
+        </a>
+        <a href="#" class="japan-img japan-img2"
+          ><div class="sale">
+            <p>關西．大阪．京都．神戶</p>
+            <div class="sale-detail">
+              <p>環球影城、奈良鹿</p>
+              <p class="sale-price"><span>16,900</span>起</p>
+            </div>
+          </div>
+          <img
+            src="https://image.cdn-eztravel.com.tw/y7AdNo2aNTF3DR7vHrk-B-CCVEKxFVvKB3F7TWvYer8/rs:fit:1000:600:1/g:ce/q:95/aHR0cHM6Ly92YWNhdGlvbi5jZG4tZXp0cmF2ZWwuY29tLnR3L2ltZy9WRFIvSlBfMjM4NjQyNzkxNS5qcGc.jpg"
+            alt=""
+          />
+        </a>
+        <a href="#" class="japan-img japan-img3"
+          ><div class="sale">
+            <p>北陸．名古屋．小松</p>
+            <div class="sale-detail">
+              <p>合掌村、立山黑部</p>
+              <p class="sale-price"><span>25,900</span>起</p>
+            </div>
+          </div>
+          <img
+            src="https://image.cdn-eztravel.com.tw/zqkWg28qOM1oTOwzuT_2V28V3tR8ElwcUC6jJhlEaLQ/rs:fit:1000:600:1/g:ce/q:95/aHR0cHM6Ly92YWNhdGlvbi5jZG4tZXp0cmF2ZWwuY29tLnR3L2ltZy9WRFIvSlBfNDgxMTQ4MDQxLmpwZw.jpg"
+            alt=""
+          />
+        </a>
+        <a href="#" class="japan-img japan-img4"
+          ><div class="sale">
+            <p>東京．箱根．輕井澤</p>
+            <div class="sale-detail">
+              <p>富士山、迪士尼</p>
+              <p class="sale-price"><span>21,900</span>起</p>
+            </div>
+          </div>
+          <img
+            src="https://image.cdn-eztravel.com.tw/Isp6CvLvtUgHEC9GP9xuuUc3Yi2gXVxBrhGDCXhrM4w/rs:fit:1000:600:1/g:ce/q:95/aHR0cHM6Ly92YWNhdGlvbi5jZG4tZXp0cmF2ZWwuY29tLnR3L2ltZy9WRFIvSlBfMzM0NjA2MjgzLmpwZw.jpg"
+            alt=""
+          />
+        </a>
+        <a href="#" class="japan-img japan-img5"
+          ><div class="sale">
+            <p>琉球．沖繩．石垣島</p>
+            <div class="sale-detail">
+              <p>水族館、玉泉洞</p>
+              <p class="sale-price"><span>14,900</span>起</p>
+            </div>
+          </div>
+          <img
+            src="https://image.cdn-eztravel.com.tw/Yq0MaHPI2vuEsKo9kP1C8lgBNikM8DkOtDdEnw646sk/rs:fit:1000:600:1/g:ce/q:95/aHR0cHM6Ly92YWNhdGlvbi5jZG4tZXp0cmF2ZWwuY29tLnR3L2ltZy9WRFIvSlBfNzYyNjc2OTkzLmpwZw.jpg"
+            alt=""
+          />
+        </a>
+      </div>
     </section>
+    <!-- 寶島必玩 -->
     <section>
-      <div class="topic nation-topic">寶島必玩</div>
-      <div class="domestic-img"></div>
+      <div class="nav">
+        <div class="topic nation-topic">寶島必玩</div>
+        <div class="nav-bar">
+          <button class="nav-district change active" data-target="tw-section1">
+            旅遊主打星
+          </button>
+          <button class="nav-district change" data-target="tw-section2">
+            環島遊
+          </button>
+          <button class="nav-district change" data-target="tw-section3">
+            東台灣
+          </button>
+          <button class="nav-district change" data-target="tw-section4">
+            西台灣
+          </button>
+          <button class="nav-district change" data-target="tw-section5">
+            澎湖金馬
+          </button>
+          <button class="nav-district change" data-target="tw-section6">
+            台中出發
+          </button>
+          <button class="nav-district change" data-target="tw-section7">
+            高雄出發
+          </button>
+        </div>
+      </div>
+      <div class="tw-container">
+        <aside class="tw-sidebar">
+          <div class="tw-bar1">
+            <h3>大家都在找</h3>
+            <ul class="tag-wrap">
+              <li class="tw-tag"><a class="tag-a" href="">環島之星</a></li>
+              <li class="tw-tag"><a class="tag-a" href="">澎湖跳島</a></li>
+              <li class="tw-tag"><a class="tag-a" href="">秋冬暖心湯旅</a></li>
+              <li class="tw-tag"><a class="tag-a" href="">台中海洋館</a></li>
+              <li class="tw-tag"><a class="tag-a" href="">楓動全台</a></li>
+              <li class="tw-tag"><a class="tag-a" href="">租車自駕遊</a></li>
+              <li class="tw-tag"><a class="tag-a" href="">國內飛機旅遊</a></li>
+              <li class="tw-tag"><a class="tag-a" href="">小三通</a></li>
+              <li class="tw-tag"><a class="tag-a" href="">高鐵假期</a></li>
+              <li class="tw-tag"><a class="tag-a" href="">巴士旅遊</a></li>
+              <li class="tw-tag"><a class="tag-a" href="">台中出發</a></li>
+              <li class="tw-tag"><a class="tag-a" href="">高雄出發</a></li>
+            </ul>
+          </div>
+          <div class="tw-bar2 aside-img">
+            <div class="slide-img">
+              <img
+                src="https://image.cdn-eztravel.com.tw/HhaSOPjIZaIktAsx1G7bUKnlaGD8Hxu7K_HoApV3jxI/rs:fit:1000:600:1/g:ce/q:95/aHR0cHM6Ly90cmlwLmNkbi1lenRyYXZlbC5jb20udHcvaW1nL0dSVC9ob21lNzIzLmpwZw.jpg"
+                alt=""
+              />
+            </div>
+            <div class="slide-img"></div>
+            <div class="slide-img"></div>
+            <div class="slide-img"></div>
+            <div class="slide-img"></div>
+            <div class="slide-img"></div>
+            <div class="slide-img"></div>
+            <div class="slide-img"></div>
+          </div>
+        </aside>
+        <div class="domestic-img">
+          <div class="taiwan show" id="tw-section1">
+            <a href="" class="tw-img1"
+              ><img
+                src="https://image.cdn-eztravel.com.tw/D237ki0heUDXtxSR_sbd8O5msKM-N16QVL-MzE3SBb0/rs:fit:1000:600:1/g:ce/q:95/aHR0cHM6Ly90cmlwLmNkbi1lenRyYXZlbC5jb20udHcvaW1nL0dSVC9zYW5yaW8yLmpwZw.jpg"
+                alt=""
+              />
+            </a>
+
+            <a href="" class="tw-img2 tw-mixed"
+              ><img
+                src="https://image.cdn-eztravel.com.tw/xFu0lyq-Pf8IHDgtY6rQt9ZJWh0g3XvAAYYUCVHJaQs/rs:fit:1000:600:1/g:ce/q:95/aHR0cHM6Ly90cmlwLmNkbi1lenRyYXZlbC5jb20udHcvaW1nL0dSVC9ob21lNjI3LmpwZw.jpg"
+                alt=""
+              />
+              <div class="tw-word">
+                健行.體驗.度假
+                <p class="tw-price"><span>1,599</span>起</p>
+              </div></a
+            >
+            <a href="" class="tw-img3"
+              ><img
+                src="https://image.cdn-eztravel.com.tw/blZGT3s43vd5M81J28DqVuwNAC6lUrb39IwzQw8ynqw/rs:fit:1000:600:1/g:ce/q:95/aHR0cHM6Ly9pbWcxLmNkbi1lenRyYXZlbC5jb20udHcvaW1hZ2VzLzFtYzRjMTIwMDBhcTl6dDRwRDE4NV9DXzc5MF80NDRfUjVfUTcwLmpwZw.jpg"
+                alt=""
+            /></a>
+            <a href="" class="tw-img4">
+              <img
+                src="https://image.cdn-eztravel.com.tw/UwIV9-9NFLj9xFSa76wk6ILEeR04KucHlpl8eISSYgE/rs:fit:1000:600:1/g:ce/q:95/aHR0cHM6Ly90cmlwLmNkbi1lenRyYXZlbC5jb20udHcvaW1nL0dSVC9ob21lMzgyLmpwZw.jpg"
+                alt=""
+              />
+            </a>
+            <a href="" class="tw-img5">
+              <img
+                src="https://image.cdn-eztravel.com.tw/Q4xzXpudckeMHfGO1uzwuxncv__8KJb9mzwF_WF31Eg/rs:fit:1000:600:1/g:ce/q:95/aHR0cHM6Ly90cmlwLmNkbi1lenRyYXZlbC5jb20udHcvaW1nL0dSVC9ob21lNDg1LmpwZw.jpg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="taiwan" id="tw-section2">123</div>
+          <div class="taiwan" id="tw-section3">333</div>
+          <div class="taiwan" id="tw-section4">444</div>
+          <div class="taiwan" id="tw-section5">555</div>
+        </div>
+      </div>
     </section>
   </body>
 </html>
+d
