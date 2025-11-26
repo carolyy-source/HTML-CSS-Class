@@ -7,10 +7,6 @@
   height: 60px;
 }
 
-.head-menu {
-  margin: 0 20px;
-}
-
 .bar {
   display: none;
   height: 100%;
@@ -24,7 +20,6 @@
 }
 
 .link {
-  flex: 1; /* 自動分攤 */
   display: flex;
   gap: 20px;
   /* background-color: rgb(63, 63, 109); */
@@ -92,9 +87,6 @@
   .title {
     font-size: 60px;
   }
-  .list {
-    color: white;
-  }
 
   .bar {
     display: flex;
@@ -103,14 +95,12 @@
     margin: 5px;
   }
 
-  .head-menu {
-    width: 100%;
+  .link {
     position: absolute;
     top: 100%;
     left: 0;
     right: 0;
     margin: 0;
-    /* opacity: 0; */
   }
 
   /* 動畫 */
@@ -121,8 +111,22 @@
     opacity: 1;
   }
 
+  .list-toggle:checked + .list {
+    display: block;
+    transition: height 1s ease-in-out;
+    height: 240px;
+    /* position: static; */
+  }
+
+  .list {
+    height: 0;
+    position: static;
+    color: white;
+  }
+
   .link {
     display: none;
+    left: 0;
     /* display: flex;
     gap: 0;
     flex-direction: column;
@@ -130,17 +134,10 @@
     align-items: stretch; */
   }
 
-  .list {
-    position: static;
-  }
   .down {
     position: absolute;
     top: 0;
     right: 20px;
     line-height: 60px;
-  }
-
-  .list-toggle:checked + .list {
-    display: block;
   }
 }
