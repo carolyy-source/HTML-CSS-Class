@@ -475,20 +475,13 @@ h3 {
   display: flex;
   flex-direction: column;
   border-radius: 8px;
-  height: 100%; /*調整高度*/
+  /* height: 100%;  */
 }
-
-/*
-問題
-1.圖片的大小or外層應該怎麼定
-
-*/
 
 .tw-mixed img {
-  height: 121.5px; /*固定高度*/
+  aspect-ratio: 130 /61;
 }
 .tw-word {
-  height: 100%; /*調整高度*/
   padding: 10px;
   font-size: 14px;
   font-weight: 700;

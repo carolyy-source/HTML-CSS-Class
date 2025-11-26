@@ -31,6 +31,10 @@ section {
   height: 300px;
 }
 
+/* 調整共同使用cols的項目 */
+[class*="cols-"] {
+  box-sizing: border-box;
+}
 .cols-1 > .col {
   width: 100%;
 }

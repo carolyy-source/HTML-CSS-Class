@@ -3,6 +3,11 @@
   box-sizing: border-box;
 } */
 
+/* 調整共同使用cols的項目 */
+[class*="cols-"] {
+  box-sizing: border-box;
+}
+
 .col-1 {
   width: 8.33%;
 }
