@@ -19,48 +19,51 @@
           alt=""
         />
       </div>
+      <label for="nav" class="bar"><i class="fa-solid fa-bars"></i></label>
       <div class="head-menu">
-        <!-- <i class="fa-solid fa-bars title"></i> -->
+        <input type="checkbox" name="show" id="nav" class="nav-toggle" />
         <ul class="link">
           <li class="intro hotel">
-            <i class="fa-solid fa-hotel"></i>找飯店
+            找飯店
+            <label for="hotel" class="down">
+              <i class="fa-solid fa-caret-down"></i
+            ></label>
+            <input
+              type="radio"
+              name="find"
+              id="hotel"
+              class="list-toggle"
+              checked
+            />
             <ul class="list">
-              <li class="selector">
-                台北
-                <ul class="list-2">
-                  <li class="selector2">晶華酒店</li>
-                  <li class="selector2">萬豪酒店</li>
-                  <li class="selector2">美福飯店</li>
-                </ul>
-              </li>
-              <li class="selector">
-                台中
-                <ul class="list-2">
-                  <li class="selector2">林酒店</li>
-                  <li class="selector2">福容酒店</li>
-                  <li class="selector2">金典飯店</li>
-                </ul>
-              </li>
+              <li class="selector">北部</li>
+              <li class="selector">中部</li>
               <li class="selector">南部</li>
             </ul>
           </li>
           <li class="intro airport">
-            <i class="fa-solid fa-jet-fighter"></i>找機票
+            找機票
+            <label for="airport" class="down">
+              <i class="fa-solid fa-caret-down"></i
+            ></label>
+            <input type="radio" name="find" id="airport" class="list-toggle" />
             <ul class="list">
-              <li class="selector nation">
-                亞洲
-                <ul class="list-2">
-                  <li class="selector2">日本</li>
-                  <li class="selector2">韓國</li>
-                  <li class="selector2">東南亞</li>
-                </ul>
-              </li>
+              <li class="selector nation">亞洲</li>
               <li class="selector">歐洲</li>
               <li class="selector">澳洲</li>
             </ul>
           </li>
           <li class="intro spot">
-            <i class="fa-solid fa-building-columns"></i>找景點
+            找景點
+            <label for="spot" class="down">
+              <i class="fa-solid fa-caret-down"></i
+            ></label>
+            <input type="radio" name="find" id="spot" class="list-toggle" />
+            <ul class="list">
+              <li class="selector view">遊樂園</li>
+              <li class="selector">國家公園</li>
+              <li class="selector">海景渡假村</li>
+            </ul>
           </li>
         </ul>
       </div>

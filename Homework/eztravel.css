@@ -425,9 +425,12 @@ h3 {
   /* position: relative; */
 }
 
+.tw-img1 img {
+  border-radius: 8px;
+}
+
 .tw-img1 {
   grid-row: 1 / 3;
-  border-radius: 8px;
 }
 
 .tw-img2 {
@@ -462,7 +465,7 @@ h3 {
   font-weight: 700;
   color: #0c9251;
   border-top: 3px solid #11d073;
-  width: 100%; /* 🔥 寬度佔滿整個 button */
+  width: 100%;
   top: calc(100% + 5px);
   left: 0;
 }
@@ -472,12 +475,20 @@ h3 {
   display: flex;
   flex-direction: column;
   border-radius: 8px;
+  height: 100%; /*調整高度*/
 }
+
+/*
+問題
+1.圖片的大小or外層應該怎麼定
+
+*/
+
 .tw-mixed img {
-  height: 121.5px;
+  height: 121.5px; /*固定高度*/
 }
 .tw-word {
-  height: 52px;
+  height: 100%; /*調整高度*/
   padding: 10px;
   font-size: 14px;
   font-weight: 700;

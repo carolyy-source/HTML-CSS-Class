@@ -4,15 +4,17 @@
   display: flex;
   background-color: #eeaccd;
   justify-content: space-between;
-}
-
-.head-menu {
-  flex: 0 0 auto; /* menu 固定在右邊 */
   height: 60px;
 }
 
-.title {
+.head-menu {
+  margin: 0 20px;
+}
+
+.bar {
   display: none;
+  height: 100%;
+  font-size: 36px;
 }
 
 .logo img {
@@ -36,9 +38,9 @@
   background-color: #d1689b;
   color: white;
   position: relative;
-  padding: 0 10px;
+  padding: 0 20px;
 }
-
+/* 
 .list::after {
   content: "";
   position: absolute;
@@ -46,30 +48,19 @@
   height: 10px;
   left: -10px;
   top: -10px;
-}
+} */
 
 .list {
   position: absolute;
-  top: calc(100% + 10px);
-  left: 10px;
+  top: 100%;
+  left: 0px;
   list-style: none;
   /* margin: 10px auto; */
   width: 150px;
   display: none; /* 隱藏none */
 }
 
-.list::before {
-  content: "";
-  position: absolute;
-  border-right: 10px solid transparent;
-  border-left: 10px solid transparent;
-  border-bottom: 10px solid #d80a6f;
-  top: -10px;
-  left: 0px;
-}
-
-.selector:hover,
-.selector2:hover {
+.selector:hover {
   background-color: #eeaccd;
 }
 
@@ -80,34 +71,76 @@
   position: relative;
 }
 
-.hotel:hover .list {
+.hotel:hover .list,
+.airport:hover .list,
+.spot:hover .list {
   display: block;
 }
 
-.airport:hover .list {
-  display: block;
-}
-.list-2 {
-  position: absolute;
-  background-color: #a70050;
-  top: 20px;
-  left: calc(100% - 20px);
-  list-style: none;
-  margin: 10px 20px;
-  width: 150px;
-  display: none; /* 隱藏none */
-}
-
-.selector:hover ul {
-  display: block;
+.list-toggle,
+.nav-toggle {
+  display: none;
 }
 
 /* 手機時的螢幕 */
 @media screen and (max-width: 767px) {
+  .headbar {
+    position: relative;
+    padding: 0 10px;
+  }
+
   .title {
     font-size: 60px;
   }
   .list {
     color: white;
+  }
+
+  .bar {
+    display: flex;
+    align-items: center;
+    font-size: 36px;
+    margin: 5px;
+  }
+
+  .head-menu {
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin: 0;
+    /* opacity: 0; */
+  }
+
+  /* 動畫 */
+  .nav-toggle:checked + .link {
+    display: block;
+    transition: all 1s ease-in-out;
+    left: 100%;
+    opacity: 1;
+  }
+
+  .link {
+    display: none;
+    /* display: flex;
+    gap: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch; */
+  }
+
+  .list {
+    position: static;
+  }
+  .down {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    line-height: 60px;
+  }
+
+  .list-toggle:checked + .list {
+    display: block;
   }
 }
