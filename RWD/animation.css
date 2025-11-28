@@ -2,4 +2,138 @@ section {
   max-width: 1200px;
   background-color: grey;
   margin: 100px auto;
+  display: flex;
+  gap: 10px;
+}
+.box {
+  background-color: pink;
+  width: 300px;
+  height: 300px;
+  animation-name: move;
+  animation-duration: 3s;
+  /* animation-iteration-count: 2;
+  animation-direction: alternate; */
+  animation-fill-mode: backwards;
+}
+
+@keyframes move {
+  0% {
+    margin-left: 0;
+  }
+  30% {
+    background-color: #aaf;
+    border-radius: 100%;
+  }
+  60% {
+    border-radius: 0;
+    background-color: #af0;
+    border-radius: 20%;
+  }
+  100% {
+    margin-left: 900px;
+    background-color: black;
+  }
+}
+
+.cube {
+  background-color: rgb(0, 0, 0);
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  position: relative;
+  padding: 10px;
+  gap: 10px;
+}
+
+.bar {
+  background-color: rgb(196, 85, 104);
+  width: 60px;
+  height: 60px;
+  position: absolute;
+}
+.bar1 {
+  top: 10px;
+  left: 10px;
+  animation-name: move1;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.bar2 {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-name: move1;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.bar3 {
+  bottom: 10px;
+  right: 10px;
+  animation-name: move1;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes move1 {
+  0% {
+    width: 60px;
+    height: 60px;
+  }
+  25% {
+    width: 180px;
+    height: 60px;
+  }
+  50% {
+    width: 60px;
+    height: 60px;
+  }
+  75% {
+    width: 60px;
+    height: 180px;
+  }
+  100% {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.cube2 {
+  background-color: rgb(0, 0, 0);
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  display: flex;
+  padding: 10px;
+  gap: 10px;
+}
+
+.dot {
+  background-color: rgb(196, 85, 104);
+  width: 100px;
+  height: 120px;
+}
+
+.dot1 {
+  background-color: rgb(253, 183, 195);
+  animation-name: jump;
+  animation-duration: 2s;
+}
+
+@keyframes jump {
+  0% {
+    margin-top: 0;
+  }
+  25% {
+    margin-top: 30px;
+  }
+  50% {
+    margin-top: 60px;
+  }
+  75% {
+    margin-top: 30px;
+  }
+  100% {
+    margin-top: 0;
+  }
 }
